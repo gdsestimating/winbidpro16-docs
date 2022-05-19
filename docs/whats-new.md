@@ -31,9 +31,13 @@ TODO
 
 TODO
 
-## Splices
+### Splices (Pressure plate and cover)
 
 TODO
+
+## Splices
+
+You can configure splices in your systems with gaps and offsets. The drawing commands in the splice command tab will allow splices at any point for verticals, and will snap to center and edge points for horizontal receptors as well as pressure plate and covers. You'll also receive job alerts when cuts are too long and require splices.
 
 ## Job Alerts
 
