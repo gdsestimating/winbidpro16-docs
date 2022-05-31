@@ -16,8 +16,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            WinBidPro Tutorial - 5min ⏱️
+            to="/docs/whats-new">
+            WinBidPro - What's New?🎉
           </Link>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="WinBidPro 16 docs home">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

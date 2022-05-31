@@ -8,8 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        We make it simple to start bidding jobs right away. Use pre-configured
+        systems and get takeoffs, shop drawings, and bids quick.
       </>
     ),
   },
@@ -18,18 +18,21 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        WinBidPro will let you focus on the features you care about. Nearly
+        everything is flexible and optional. Just need Shop Drawings? Just want
+        cut lists optimized? Have your own way to calculate labor? WinBidPro
+        won't get in your way.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Stored in the Cloud',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        WinBidPro16 is cloud-based. Get your data anywhere where there is internet
+        from any machine with the app installed! Users in a company account
+        automatically share everything.
       </>
     ),
   },

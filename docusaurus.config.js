@@ -12,7 +12,7 @@ const config = {
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon.ico',
 
   // GitHub pages deployment config.
   organizationName: 'gdsestimating',
@@ -44,20 +44,23 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        { name: 'msapplication-TileColor', content: '#2d89ef' },
+        { name: 'theme-color', content: '#ffffff' }
+      ],
       navbar: {
         title: 'WinBidPro',
         logo: {
           alt: 'WinBidPro 16 Logo',
-          src: 'img/logo.svg',
+          src: 'img/w.svg',
         },
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'whats-new',
             position: 'left',
             label: 'Docs',
           }

@@ -1,5 +1,5 @@
 ---
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 # What's New
@@ -21,19 +21,19 @@ v15 was had many short-comings when it came to curtain wall. We've drastically i
 
 ### SSG Support
 
-TODO
+**Curtain Wall** and **Window Wall** systems have SSG Vertical support. This will help give accurate glass sizes in such systems and accurate pressure plate and face cover cuts. SSG horizontals are not yet supported but support is coming soon.
 
 ### Pressure Plate and Face Cover Cuts
 
-TODO
-
-### Glass Sizing
-
-TODO
+Horizontal face cover and pressure plate will account for SSG verticals and run continuous across them. You can also configure gaps at the ends for 100% accurate cuts.
 
 ### Splices (Pressure plate and cover)
 
-TODO
+You can now splice horizontal face cover and pressure plate with a preconfigured offset (where applicable). We give you an easy way to select a center point of a vertical or panel.
+
+### Glass Sizing
+
+Glass sizing is more accurate in Vertical SSG scenarios. You can set glass bites of assemblies to override the system's default to account for special perimeter bite situations. Note: Horizontal SSG is not yet supported but is coming soon.
 
 ## Splices
 
