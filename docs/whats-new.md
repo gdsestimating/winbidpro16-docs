@@ -10,6 +10,10 @@ In v15, you had to manually enter the extrusion parts of alternate vertical asse
 
 Now in v16, you can configure a framing system with as many vertical and horizontal assemblies as you like, with all parts included. This allows a user to configure various alternate members once, and reuse them as much as they like. You can preconfigure expansion mullions, corner posts, reinforced mullions, and more, and they will be available in the "alternate" command tab.
 
+![img](../static/screenshots/hoz-assemblies.png)
+
+![img](../static/screenshots/pick-assembly.png)
+
 ## Curtain Wall Improvements
 
 v15 was had many short-comings when it came to curtain wall. We've drastically improved the ability to configure curtain wall for accurate cuts of material. We did this this in several ways:
@@ -27,9 +31,13 @@ v15 was had many short-comings when it came to curtain wall. We've drastically i
 
 Horizontal face cover and pressure plate will account for SSG verticals and run continuous across them. You can also configure gaps at the ends for 100% accurate cuts.
 
-### Splices (Pressure plate and cover)
+### Horizontal Splices (Pressure plate and cover)
 
-You can now splice horizontal face cover and pressure plate with a preconfigured offset (where applicable). We give you an easy way to select a center point of a vertical or panel.
+You can now splice horizontal face cover and pressure plate with a preconfigured offset (where applicable). We give you an easy way to select a center point of a vertical or panel in order to specify splice locations. Head and Sill Receptors can also have configured splices with the proper parts and gaps, allowing for more accurate cut lengths and optimization.
+
+![img](../static/screenshots/head-recept.png)
+
+![img](../static/screenshots/splice-config.png)
 
 ### Glass Sizing
 
