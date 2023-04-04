@@ -1,6 +1,6 @@
 ---
 title: What's New Details
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # What's New Details
