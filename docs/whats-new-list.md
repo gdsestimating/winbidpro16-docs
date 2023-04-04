@@ -1,5 +1,5 @@
 ---
-title: Roadmap for 2022 Q3
+title: Whats New List
 ---
 
 # List of What's New in WinBidPro v16
