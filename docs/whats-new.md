@@ -1,5 +1,7 @@
 ---
-sidebar_position: 1
+title: What's New Details
+ 
+sidebar_position: 2
 ---
 
 # What's New

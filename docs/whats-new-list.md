@@ -1,5 +1,7 @@
 ---
 title: Whats New List
+
+sidebar_position: 1
 ---
 
 # List of What's New in WinBidPro v16
