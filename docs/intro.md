@@ -4,16 +4,27 @@ sidebar_position: 1
 
 # Getting Started
 
+## Installing WinBidPro v16
+After downloading v16, you want to open the installation file and the program will install on your computer. A "W" WinBidPro v16 icon will be added to your desktop and the program will open automatically when the installer is finished.
+
+WinBidPro v16 is a hybrid Cloud based system, so the program is installed on your computer, but all of the data used for quotes and drawings is stored in the Cloud on Amazon AWS servers. This means you can install the software on any computer running Microsoft Windows 8 or newer, login with your email address and password, and you will have full access to your company's data.
+
+Apple Mac users can run WinBidpro if they have Parallels (software that lets you run MS Windows on a Mac) and a copy of MS Windows installed.
+
 ## Choose Your Vendor Catalogs
-Before creating estimates (Jobs) in v16, you will need to select the catalogs you would like to use. Since this software uses web-hosted data, there is no need to install catalogs, it is simply a matter of selecting the ones you want.
-The first time you use v16, you will be prompted to selected catalogs, but if you need to add more later, you can:
+The first time you open v16 you will be prompted to select the vendor catalog(s) you want to created estimates with. If you ever need to add more catalogs, or even remove one from your list, you can:
 1. Click on the `Catalogs` menu
 2. Then click `Manage Vendors`
 
-You can select the catalog to use when you create a new job. The jobs list will show you all of your jobs from any vendor.
+Whenever you create a new job you will select a catalog. There is only one list of jobs to look at. This will show you all of the jobs from any vendor created by any user in your company account.
+
+## Welcome Tab 
+The Welcome tab is a great place to see tips and new features about the program. You can also see a list of recent jobs, and create a new job, and open your list of jobs -- all from this one place.
+
+![img](../static/screenshots/welcome-tab.png)
 
 ## Know Your Catalogs
-We always recommend that you familiarize yourself with the vendor catalog you will use to create jobs. Most catalogs available in v16 have list pricing already configured. A discount multiplier of 1 is set to all parts by default, so it is up to you to enter your company's multipliers for a certain vendor. As of July, 2022, we are working on adding a tool to make backup changes to multipliers in both the Parts List and the Final Parts report.
+We always recommend that you familiarize yourself with the vendor catalog you will use to create jobs. Most catalogs available in v16 have list pricing already configured. A discount multiplier of 1 is set to all parts by default, so it is up to you to enter your company's multipliers for a certain vendor. There is a tool in the Final Parts View and the Edit Job Parts window to change multipliers for a job. The Vendor Parts window (under the Catalog - Parts menu) has the same tool to change multiples at the master catalog level.
 
 Aside from know the pricing in a catalog, it is important to know a frame configuration when you intend to use it in a job. Each frame in the Framing Systems list is configured with all things that make for a accurate drawing and an complete list of parts. Before creating a job, it is always a good idea to edit the Framing System(s) you plan to use, and review how it is configured, and what parts are being used.
 
