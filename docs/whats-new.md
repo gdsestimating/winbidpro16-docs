@@ -1,10 +1,9 @@
 ---
 title: What's New Details
- 
 sidebar_position: 2
 ---
 
-# What's New
+# What's New Details
 
 ## Preconfigure All Alternate Assemblies
 
