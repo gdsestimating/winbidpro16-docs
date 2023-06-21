@@ -60,8 +60,8 @@ The fields available are specified in the following table:
 | `PackagePrice` | The base price per package of the part. Note: see also `Multiplier` | ✅ | `Package Price` |
 | `UnitPrice` | Price per unit or foot of the part depending on the handling | ✅ | `Unit Price` | 
 | `Multiplier` | Multipliers are used by manufacturers to offer discounts and also to raise base prices. Always greater than 0. Maybe be greater than 1. The real price is `PackagePrice * Multiplier`. | ✅ ||| `TotalUnitPrice` | The price if charged per unit, not per package. | ✅ | `Total (by Units)` |
-| `TotalByPackage` | The price if purchasing whole packages when unit quantity is less than a package amount. | ✅| `Total (by Package)` |
-| `TotalByUnit` | The price if purchasing whole packages when unit quantity is less than a package amount. | ✅| `Total (by Unit)` |
+| `TotalByPackage` | The total price of the line item if purchasing whole packages when unit quantity is less than a package amount. | ✅| `Total (by Package)` |
+| `TotalByUnit` | The total price of the line item if prorating the partial packages. | ✅| `Total (by Unit)` |
 | `Weight` | Not required by WinBidPro, this can help users consider shipping costs. Will be 0 or greater. | ✅ | `Package Weight` |
 | `TotalWeight` | The total weight calculated by `WeightPerPackage * PackagesToOrder` | ✅ | `Total Weight` |
 | `howCreated` | Indicates how the line item was created. One of [`Generated`, `Modified`, `Added`]. `Generated` means WinBidPro determined the units needed. `Modified` means the user adjusted the units needed from what WinBidPro generated. `Added` means a user added the item themselves. | ✅ ||
