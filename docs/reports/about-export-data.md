@@ -80,11 +80,11 @@ The `Handling` field of  a part determines what type of units we are dealing wit
 > User needs 401 screws. They come in boxes of 200. In this case the data could be represented in JSON like `{ ... UnitsNeeded: 401, Length: 0, UnitsPerPackage: 200, PackagesToOrder: 3 ... }`. 
 
 ### 2. The `Measure` Handling
-`Measure` parts have a length. For example gasket material sold in rolls of 500'. For these line items, the `UnitsNeeded` are in inches **(though our program displays them in feet)** and `PackagesToOrder` = `Ceiling(UnitsNeeded / (Length * UnitsPerPackage))`.
+`Measure` parts have a length. For example gasket material sold in rolls of 500'. For these line items, the `UnitsNeeded` are in feet and `PackagesToOrder` = `Ceiling(UnitsNeeded / (Length * UnitsPerPackage))`.
 
 > **Example**
 >
-> User needs 751' of a gasket part. The part is sold in 250' rolls. Rolls are sold individually. In this case the data could be represented in JSON like `{ ... UnitsNeeded: 9012, Length: 3000, UnitsPerPackage: 1, PackagesToOrder: 4 ... }`.
+> User needs 751' of a gasket part. The part is sold in 250' rolls. Rolls are sold individually. In this case the data could be represented in JSON like `{ ... UnitsNeeded: 751, Length: 3000, UnitsPerPackage: 1, PackagesToOrder: 4 ... }`.
 
 ### 3. The `Optimize` Handling
 `Optimize` parts are treated like `Count` parts. The one difference is they have a length which is often displayed in inches to the user. For these parts, our optimizer has determined how many stocks to order so `UnitsNeeded` is again a simple count. `PackagesToOrder` = `Ceiling(UnitsNeeded / UnitsPerPackage)`
