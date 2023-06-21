@@ -1,8 +1,8 @@
 {
-    "label": "Glass",
-    "position": 4,
-    "link": {
-      "type": "generated-index",
-      "description": "Learn how to configure glass"
-    }
+  "label": "Glass",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn how to configure glass"
   }
+}
