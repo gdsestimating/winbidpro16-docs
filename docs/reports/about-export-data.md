@@ -29,9 +29,9 @@ The fields available are specified in the following table:
 | `IsSpecialShape` | `True` or `False`. True for any lites that are non-rectangular. NOTE: csv exports are typically upper case `TRUE` and `FALSE` values but it is best to be case insensitive. | ✅ | `Is Special Shape` |
 | `PricePerSquareUnit` | Price of the product per square foot. The user typically enters this as provided by the supplier, but may be 0 if not entered. | ✅ | `Price / sqft`
 | `BlockPrice` | The `BlockArea / 144 * PricePerSquareUnit` or `MinimumBlockArea * PricePerSquareUnit`, whichever is greater. | ❌ || 
-| `TotalPriceByBlock` | The total price using Block area. `BlockArea * PricePerSquareUnit` | ✅ | `Total Price (Block Area)` |
-| `Supplier` | Purely descriptive, entered by the user. Has impact on anything. May be empty/null. | ✅ | `Glass Supplier` |
-| `Color` | Purely descriptive, entered by the user. No impact on price. It is is sometimes used for filtering in WinBidPro | ✅ ||
+| `TotalPriceByBlock` | The total price using Block area. `BlockPrice * Quantity` | ✅ | `Total Price (Block Area)` |
+| `Supplier` | Purely descriptive, entered by the user. Has no impact on anything. May be empty/null. | ✅ | `Glass Supplier` |
+| `Color` | Purely descriptive, entered by the user. No impact on price. It is sometimes used for filtering in WinBidPro | ✅ ||
 | `Area` | The real area in square feet | ❌ ||
 | `LitePoints` | An array of 3 or more `Point2D` coordinates that make the shape of the lite | ❌ ||
 
@@ -87,7 +87,7 @@ The `Handling` field of  a part determines what type of units we are dealing wit
 >
 > User needs 751' of a gasket part. The part is sold in 250' rolls. Rolls are sold individually. In this case the data could be represented in JSON like `{ ... UnitsNeeded: 9012, Length: 3000, UnitsPerPackage: 1, PackagesToOrder: 4 ... }`.
 
-### 2. The `Optimized` Handling
+### 3. The `Optimized` Handling
 `Optimized` parts are treated like `Counted` parts. The one difference is they have a length which is often displayed in inches to the user. For these parts, our optimizer has determined how many stocks to order so `UnitsNeeded` is again a simple count. `PackagesToOrder` = `Ceiling(UnitsNeeded / UnitsPerPackage)`
 
 For these parts, `Length` tells us the length of stock to order. It's often ~24' but may be a custom length specified by the user for a custom order from the manufacturer.
