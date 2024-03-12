@@ -15,12 +15,12 @@ Head receptors, flashing, and other subsills can be spliced with adjustable gaps
 > **Note:** The `Receptors / Subsill` subcommand describe below will only appear if your framing system is configured with a head or sill receptors.
 
 ### Steps:
-1. Selecting the `Splice` tool tab at the bottom of the editor
+1. Select the `Splice` tool tab at the bottom of the editor
 1. Clicking `Add`
 1. Under **"Command"** select the `Receptors / Subsill` subcommand
 1. Under **"What to Splice"** check/uncheck the `Head Receptor` and `Sill Receptor` checkboxes as appropriate
 1. Select or enter your snap points
-    1. To splice at a snap point (midpoint or edit of a panel or vertical), click one of the red squares (endpoint) or triangles (midpoints) that appeared on the head or sill.
+    1. To splice at a snap point (midpoint or edge of a panel or vertical), click one of the red squares (endpoint) or triangles (midpoints) that appeared on the head or sill.
     1. To splice at manual distance from the left edge of the elevation, check the box that says "measured splice" under the splice locations list area and enter the X value you want to splice at.
 1. Click `Add` to finish and apply the command
 
@@ -30,7 +30,7 @@ Multiple splice points may be selected when using snap points.
 ## Vertical
 
 ### Steps:
-1. Selecting the `Splice` tool tab at the bottom of the editor
+1. Select the `Splice` tool tab at the bottom of the editor
 1. Clicking `Add`
 1. Be sure the `Vertical` subcommand is selected
 1. Select the verticals you want to splice (for more, see the note below)
@@ -47,11 +47,11 @@ Multiple splice points may be selected when using snap points.
 ## Pressure Plate and Cover
 
 ### Steps:
-1. Selecting the `Splice` tool tab at the bottom of the editor
+1. Select the `Splice` tool tab at the bottom of the editor
 1. Clicking `Add`
 1. Under **"Command"** select the `Horizontal PP/FC` subcommand
 1. Select or enter your snap points
-    1. To splice at a snap point (midpoint or edit of a panel or vertical), click one of the red squares (endpoint) or triangles (midpoints) that appeared on the head or sill.
+    1. To splice at a snap point (midpoint or edge of a panel or vertical), click one of the red squares (endpoint) or triangles (midpoints) that appeared on the head or sill.
     1. To splice at manual distance from the left edge of the elevation, check the box that says "measured splice" under the splice locations list area and enter the X value you want to splice at.
 1. Click `Add` to finish and apply the command
 
