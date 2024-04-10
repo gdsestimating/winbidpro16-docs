@@ -53,3 +53,8 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+img[alt=jobalertmenu] {
+  
+  width: 250px;
+}
+
