@@ -1,6 +1,6 @@
 ---
 title: Job Alerts
-sidebar_position: 6
+sidebar_position: 101
 ---
 It can be hard to keep a so many details in your head and be sure that you checked everything. WinBidPro 16 can now help! WinBidPro 16 will perform various checks automatically and alert you to problems, or warn you about potential problems. It does this via the "Job Alerts" view. The kinds of things it can catch are:
 

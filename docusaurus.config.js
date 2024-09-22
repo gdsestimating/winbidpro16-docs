@@ -59,7 +59,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'whats-new',
+            docId: 'whats-new-list',
             position: 'left',
             label: 'Docs',
           }
