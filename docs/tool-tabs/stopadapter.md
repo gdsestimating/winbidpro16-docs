@@ -1,5 +1,5 @@
 ---
-title: Stops/Adapters
+title: Stops/Adapters (Beta)
 ---
 
 This tool tab lets you add or override stops in selected openings.

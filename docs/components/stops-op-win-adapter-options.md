@@ -1,5 +1,5 @@
 ---
-title: Stop and Adapter Options
+title: Stop and Adapter Options (Beta)
 ---
 
 In **v16.10.4** we updated how stops are configured on a system in order to build out a tool tab that can add stops and operable window adapters to user selected openings.
