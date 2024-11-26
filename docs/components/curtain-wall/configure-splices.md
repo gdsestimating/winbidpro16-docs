@@ -2,15 +2,15 @@
 
 You can configure splice gaps (and offsets for pressure plate and face covers) by editing the assembly and going to the splice tab. See the following images for how to get to the configuration view:
 
-![img](../../static/screenshots/go-to-edit-assembly.png)
-![img](../../static/screenshots/go-to-edit-splice-config.png)
+![img](../../../static/screenshots/go-to-edit-assembly.png)
+![img](../../../static/screenshots/go-to-edit-splice-config.png)
 
 ## Splice subsill/head receptors
 
 Head receptors, flashing, and other subsills can be spliced with adjustable gaps and hardware.
 
 
-![img](../../static/screenshots/splice-subsill.png)
+![img](../../../static/screenshots/splice-subsill.png)
 
 > **Note:** The `Receptors / Subsill` subcommand describe below will only appear if your framing system is configured with a head or sill receptors.
 
