@@ -5,7 +5,7 @@ title: Stop and Adapter Options (Beta)
 In **v16.10.4** we updated how stops are configured on a system in order to build out a tool tab that can add stops and operable window adapters to user selected openings.
 
 :::danger Dev Note:
-**Adapters** here refer to operable window adapters (vents) and are looking to start filling in the need to track operable window parts.
+**Adapters** here refer to operable window adapters (vents) and exist to fill the need to track operable window parts.
 **Glass Adapters** are more completely handled in the **Glazing Options** tool tab. 
 :::
 
