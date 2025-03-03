@@ -1,5 +1,5 @@
 ---
-title: Arches
+title: Arches (Beta)
 ---
 
 ## Locate the Rake Tool Tab
