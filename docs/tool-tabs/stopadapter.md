@@ -17,7 +17,7 @@ The red text displays the option assigned to the opening and for now is only vie
     - **By Lite** - Take the selected action on the clicked opening.
     - **By Row** - Take the selected action on all openings with the same starting Y value.
     - **By Elevation** - Take the selected action on all openings.
-- **Edit/Add Options** - [Click here](../components/stops-op-win-adapter-options) to learn about how to add/edit options.
+- **Edit/Add Options** - [Click here](../components/stops-op-win-adapter-options.md) to learn about how to add/edit options.
 
 :::info
 In the future we plan on adding an application mode **By Type** that gets the glass or opwin product that was clicked  and adds commands for each of those similar openings.

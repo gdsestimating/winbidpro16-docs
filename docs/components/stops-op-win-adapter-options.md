@@ -1,5 +1,5 @@
 ---
-title: Stop and Adapter Options (Beta)
+title: Stop and Adapter Options
 ---
 
 In **v16.10.4** we updated how stops are configured on a system in order to build out a tool tab that can add stops and operable window adapters to user selected openings.
@@ -40,7 +40,7 @@ The assembly dropdown is where you select the assembly to apply for this option.
 After adding an assembly if you want to edit it further that can be done in the **Components** tab.
 ![img](../../static/screenshots/sao-tab-3.png)
 
-[Click here](../tool-tabs/stopadapter) to learn about using the Stop/Adapter tool tab.
+[Click here](../tool-tabs/stopadapter.md) to learn about using the Stop/Adapter tool tab.
 
 
 
