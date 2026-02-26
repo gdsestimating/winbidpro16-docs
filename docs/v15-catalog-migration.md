@@ -23,12 +23,6 @@ Before packaging anything, decide which catalogs you want to bring into v16.
 
 Depending on your workflow, catalogs may be shared across users or each estimator may have their own copy. If multiple copies exist, choose the one with the best-quality data — the most current pricing, cleanest framing systems, and most complete parts. That catalog will become the starting point for your team in v16.
 
-:::tip
-
-If you're not sure which copy is the best starting point, [contact us](https://www.gdsestimating.com/support) and we can help you evaluate.
-
-:::
-
 ---
 
 ## Step 2 — Compact Your Vendor Databases (Optional)
@@ -79,7 +73,7 @@ Go up one level so you can see the vendor folder itself. Right-click it and choo
 
 Repeat this for each catalog you want to migrate.
 
-:::tip[Need help zipping?]
+:::tip[Need more help zipping?]
 
 Microsoft has a step-by-step guide: [Zip and unzip files in Windows](https://support.microsoft.com/en-us/windows/zip-and-unzip-files-8d28fa72-f2f9-712f-67df-f80cf89fd4e5).
 
