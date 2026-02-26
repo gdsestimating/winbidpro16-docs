@@ -58,3 +58,22 @@ img[alt=jobalertmenu] {
   width: 250px;
 }
 
+.footer__icon-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ifm-footer-link-color);
+  text-decoration: none;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.footer__icon-link:hover {
+  color: var(--ifm-footer-link-hover-color);
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.footer__icon-link svg {
+  flex-shrink: 0;
+}
+
