@@ -1,0 +1,53 @@
+---
+title: Horizontals Tab
+sidebar_position: 3
+---
+Add horizontal mullions across selected panels.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-horz-3.png"/></div>
+
+The Horizontals Tool Tab will show a list of horizontals added to your current elevation. You can use this list to quickly review, edit, or delete existing horizontals.
+
+If horizontals haven't been added to this elevation, the list will show `No Horizontals`.
+
+## Adding Horizontals
+
+Click the `Add` button to create a new horizontal mullion. 
+
+Your tab will switch to a new view where you can add horizontal mullions by selecting panels, choosing a horizontal type, and set the type's options.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-horz-2.png"/></div><br/>
+
+:::info
+    To add a horizontal, you’ll need at least one horizontal assembly configured in the Framing System applied to the elevation.
+
+    See [Configuring Framing Systems](/docs/v16/configuration/framing-system) for more details.
+:::
+
+### Types and Options
+
+* `Horizontal` - Horizontal mullion, placed at a specified height.
+
+    * `Assembly` - Select the assembly from the Framing System to use. Defaults to the typical horizontal. 
+
+    * `Height` - Distance in inches to the horizontals' vertical position.
+
+    * `Measure From` - Select where to measure the `Height` from, options include:
+        * `from the bottom of the elevation` 
+        * `from the top of the elevation`
+        * `above the highest horizontal` 
+
+* `Conitunous Horizontal` - Horizontal mullion that can interrupt verticals at intersections, placed at a specified height.
+
+    * All options from `Horizontal` apply to `Conitnuous Horizontal` as well.
+    * ☑ `Interrupt Left Jamb/Vertical` - Toggle interrupting the left vertical or jamb at the intersection.
+    * ☑ `Interrupt Right Jamb/Vertical` - Toggle interrupting the right vertical or jamb at the intersection.
+
+* `Equally-Spaced Horizontal` - Add one or more horizontals at once, equally spaced across the selected panels.
+    * `# of Horizontals` - Adds this amount of horizontals to each panel, equally spaced.
+
+### Confirm / Return
+
+Click `Add` to confirm your settings and apply them to the elevation.
+
+Click `Back` to return to the list of horizontals.

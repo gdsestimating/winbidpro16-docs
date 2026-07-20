@@ -1,0 +1,22 @@
+---
+title: Glass Tab (TBU)
+sidebar_position: 11
+---
+
+Apply glass products to selected panels.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-glass-1.png"/></div>
+
+If you worked with version 15, the glass tab will feel familiar. The biggest change is in how we select glass.
+
+### Step 1 - Add Glass to the Job
+
+Click the "Add Products to Job" button to find glass products you wish to use in this job.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/add-glass-product.png"/></div>
+
+### Step 2 - Assign Glass
+
+Select a product in the glass tab grid. Be sure "Add" is selected to the left of the grid. Then Click a lite of glass.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/assign-glass-row.png"/></div>

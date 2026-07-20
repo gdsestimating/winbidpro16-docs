@@ -1,0 +1,57 @@
+---
+title: Glass Tab
+sidebar_position: 11
+---
+
+Apply glass products to selected panels.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-glass-1.png"/></div>
+
+The Glass Tool Tab will show a list of glass products loaded on the current job. When these products are applied to an elevation, the panels will be updated with type labels.
+
+If glass products haven't been added to this job, the list will show `Start by adding a glass product to the job`. Glass cannot be assigned to panels with a glass product loaded.
+
+## Setting the Product List
+
+The Glass Tool Tab uses glass products to represent glass on an elevation. 
+
+WinBidPro will include a number of glass options by default and gives you the ability to create, or copy and modify to meet your glass requirements.
+
+* `Find Product` - Load a glass product to a job. Once a product is added you'll see it on the glass list in the Tool Tab.
+
+* `Create Product` - Configure a new glass product. See [Configuring Glass Products](/docs/v16/configuration/parts/glass-products) for more details.
+
+* `Show Assignments` - Toggle a list of glass products assigned to the current elevation. 
+    * If no products are assigned to panels, the list will show `No lites have been assigned a product` while this list is active.
+
+### Modifying Glass Products
+
+The product list lets you change certain values of the glass product as it appears in this job. These options are covered in [Configuring Glass] but here's a couple options that can be really helpful when representing different kinds of glass:
+
+* `Fill Pattern` - Change the fill / hatch pattern drawn on the surface of the glass.
+
+* `Draw Color` - Change the color of the glass.
+
+
+## Assigning Glass
+
+### Process
+
+To assign glass, make sure a glass product is loaded and available from the list. Select the glass product you want to use, click `Add`, and then click the panels you want to apply it to.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-glass.gif"/></div>
+
+### Options
+
+* `Add` - Assign the current glass product to the panels you click.
+
+* `Delete` - Remove glass product from the panels you click.
+
+There are also some options here to help speed up glass assignment:
+
+* `By Lite` - Default option. `Add` or `Delete` glass on individual panels.
+
+* `By Row` - `Add` or `Delete` glass for a full row of panels, including door glazing.
+* `By Elevation` - `Add` or `Delete` glass for a to all panels in the elevation, including door glazing.
+
+Once a glass product is applied to a panel, the preview will update to show where and what kind of glass is applied.

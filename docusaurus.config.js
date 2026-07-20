@@ -1,25 +1,28 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'WinBidPro 16 Docs',
+  title: 'WinBidPro Docs',
   tagline: 'Welcome to the WinBidPro Documentation. Click below to start learning our software.',
   url: 'https://docs.winbidpro.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
   favicon: 'favicon.ico',
 
   // GitHub pages deployment config.
   organizationName: 'gdsestimating',
-  projectName: 'winbidpro16-docs',
+  //projectName: 'winbidpro16-docs',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+  },
+
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -31,25 +34,34 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/gdsestimating/winbidpro16-docs/edit/trunk',
+          sidebarPath: './sidebars.js',
+          //editUrl: 'https://github.com/gdsestimating/winbidpro16-docs/edit/trunk',
+        },
+        blog: {
+          showReadingTime: false,
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
+          onInlineTags: 'warn',
+          onInlineAuthors: 'warn',
+          onUntruncatedBlogPosts: 'ignore',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: './src/css/custom.css',
         },
       }),
     ],
   ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [
-        { name: 'msapplication-TileColor', content: '#2d89ef' },
-        { name: 'theme-color', content: '#ffffff' }
-      ],
+      // Replace with your project's social card
+      image: 'img/docusaurus-social-card.jpg',
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
         title: 'WinBidPro',
         logo: {
@@ -57,12 +69,19 @@ const config = {
           src: 'img/w.svg',
         },
         items: [
+          {to: '/blog', label: 'Patch Notes', position: 'left'},
           {
-            type: 'doc',
-            docId: 'whats-new-list',
+            type: 'docSidebar',
+            sidebarId: 'v16Sidebar',
             position: 'left',
-            label: 'Docs',
-          }
+            label: 'v16 Docs',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'v15Sidebar',
+            position: 'left',
+            label: 'v15 Docs',
+          },
         ],
       },
       footer: {
@@ -84,7 +103,7 @@ const config = {
                 </a>`,
               },
               {
-                html: `<a href="https://www.linkedin.com/company/68352282/" target="_blank" rel="noopener noreferrer" class="footer__icon-link" title="LinkedIn">
+                html: `<a href="http://linkedin.com/company/gds-estimating" target="_blank" rel="noopener noreferrer" class="footer__icon-link" title="LinkedIn">
                   <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                   <span>LinkedIn</span>
                 </a>`,
@@ -118,4 +137,4 @@ const config = {
     }),
 };
 
-module.exports = config;
+export default config;

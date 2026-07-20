@@ -54,8 +54,7 @@
 }
 
 img[alt=jobalertmenu] {
-  
-  width: 250px;
+  width: 25%;
 }
 
 .footer__icon-link {
@@ -77,3 +76,16 @@ img[alt=jobalertmenu] {
   flex-shrink: 0;
 }
 
+.app-img {
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mini-img {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

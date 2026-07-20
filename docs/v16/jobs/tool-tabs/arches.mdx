@@ -1,0 +1,66 @@
+---
+title: Arches Tab
+sidebar_position: 8
+---
+
+:::warning
+    The arch tool is still in development. See notes marked with an asterisk (*) for note on what options are still being developed. If you come across a bug, please submit a report using the `Support/Bug Report` option under the `Help` toolbar tab.  
+
+    You can submit a post (or up-vote existing ones) on our [feature request page](https://feedback.winbidpro.com/) to help us set development priority.
+:::
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-arch-1.png"/></div>
+
+The Arches Tool Tab will show a list of arches applied in your current elevation. You can use this list to quickly review, edit, or delete an existing arch.
+
+Currently, only one arch can be applied to a system.*
+
+## Arch Drop
+
+You can find an option to set an Arch Drop in the toolbar under `Settings`, `Team Settings`. This will add extra length to cut list items that are arched.
+
+:::warning
+    Arch Drop values **will effect your entire team**. Once you set this value, it will apply to all new jobs **after the `Arch Drop` is set**. 
+:::
+
+## Adding an Arch
+
+Click the `Draw New Arch` button to apply an arch, see Modes and Types below for more details.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-arch.gif"/></div>
+
+:::tip
+    The Arches tool uses point-snapping to automatically place your mouse at end points and mid points of frame segments as you get close to them.
+
+    You can temporarily disable this by holding `Ctrl` while you're placing points.
+:::
+
+### Mode
+
+* `Arc Height` - Move your mouse to change the `Start Y` value in inches, then left-click to set the arch. This number represent the base of the arch and interprets the radius based on where this point sits in relation to the highest point in the elevation.
+
+* `Radius` - Move your mouse to change the `Radius` in inches, then left-click to set the arch. This calculates base of the arch from the desired radius.
+
+
+### Options
+* ☑ `Continuous Head` - If your radius is small enough, the option to toggle a continuous head assembly will appear. For larger radiuses (shallower arch), a continuous head is automatically applied
+
+* When your arch is set, you can hit the `Esc` key to unset it and adjust by moving your mouse up or down. Left-click to set the arch again.
+
+
+### Types
+
+* `Center` - Locks the center of the arch radius to the horizontal mid-point of the elevation.
+
+* `Left Corner` / `Right Corner` - Locks the center of the arch radius to the bottom left or right corner of the elevation.
+
+    * Currently, this option is only available for elevations with Widths less than or equal to their Height.*
+
+### Confirm / Return
+
+Click `Add` to confirm your settings and return to the list of arches applied to the elevation.
+
+Click `Cancel` to cancel and return to the list of arches applied to the elevation.
+
+
+

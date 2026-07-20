@@ -1,0 +1,76 @@
+---
+title: Splices Tab
+sidebar_position: 5
+---
+
+Add splices to vertical/horizontal elements of your elevation.
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-splice-3.png"/></div>
+
+The Splices Tool Tab will show a list of splices applied to the frames in your current elevation. You can use this list to quickly review, edit, or delete existing splices.
+
+A preview of your splice cuts will appear in the elevation using white lines by default.
+
+If splices haven't been added to this elevation, the list will show `No Splices`.
+
+## Splice Options
+
+* `Add` - Manually add a new splice at a specific point on a vertical or horizontal element. See below for more details.
+* `Auto Apply Vertical` - Automatically add splices at full stock lengths on applicable verticals.
+* `Auto Apply Receptor` - Automatically add splices at full stock lengths on applicable head and sill receptors.
+
+Any automatically applied splices will be added to the splice list where you can edit or delete them as needed. 
+
+## Adding & Editing Splices
+
+For the `Add` option, you'll be brought to a new menu.
+
+:::tip
+    The Splice tool for manually adding a splice uses point-snapping to automatically place your mouse at end points and mid points of frame segments as you get close to them.
+
+    You can temporarily disable this by holding `Ctrl` while you're placing points.
+:::
+
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-splice-2.png"/></div>
+
+### Storefront Types & Options
+
+* `Verticals`
+    * `Verticals to Splice` - Either select the verticals in the viewer or type in their label 
+    * ☑ `Back Member` - Toggle to apply the splice to back members
+    * `Position` - Where the splice is applied, measured in inches from the bottom of the elevation
+
+*  `Receptors / Sub Sill`
+Horizontal splice for Head and Sill Receptors / Sub Sills
+
+    * `What to Splice` - Toggles for ☑ `Head Receptor` and ☑ `Sill Receptor / Subsill`
+    * `Where to Splice` - Select a snap point to place a splice or toggle ☑ `Measured Splice` to set a splice point measured in inches from the leftmost point on the elevation
+
+*  `Head and Sill`
+Horizontal splice for Heads and Sills
+
+    * `What to Splice` - Toggles for ☑ `Head`, ☑ `Sill` and ☑ `Back Member`
+    * `Where to Splice` - Select a snap point to place a splice or toggle ☑ `Measured Splice` to set a splice point measured in inches from the leftmost point on the elevation
+
+### Curtain Wall Types & Options
+
+* `Verticals`
+    * `Verticals to Splice` - Either select the verticals in the viewer or type in their label.
+        * Below this are toggles to apply this splice to the ☑ `Face Cap`, ☑ `Pressure Plate`, and/or ☑ `Back Member` where applicable.
+    * `Position` - Where the splice is applied, measured in inches from the bottom of the elevation.
+
+*  `Receptors / Sub Sill` - Horizontal splice for Head and Sill Receptors / Sub Sills
+
+    * `What to Splice` - Toggles for ☑ `Head Receptor` and ☑ `Sill Receptor / Subsill`
+    * `Where to Splice` - Select a snap point to place a splice or toggle ☑ `Measured Splice` to set a splice point measured in inches from the leftmost point on the elevation
+
+*  `Head and Sill` - Horizontal splice for Heads and Sills
+
+    * `What to Splice` - Toggles for ☑ `Head`, ☑ `Sill` and ☑ `Back Member`
+    * `Where to Splice` - Select a snap point to place a splice or toggle ☑ `Measured Splice` to set a splice point measured in inches from the leftmost point on the elevation
+
+### Confirm / Return
+
+Click `Save` to confirm your settings and apply the splice.
+
+Click `Back` to return to the list view.

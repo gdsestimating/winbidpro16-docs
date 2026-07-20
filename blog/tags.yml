@@ -1,0 +1,24 @@
+feature:
+  label: Feature
+  permalink: /feature
+  description: Relating to a specific feature.
+
+improvement:
+  label: improvement
+  permalink: /improvement
+  description: Improvement to an existing feature.
+  
+bug:
+  label: Bug Fix
+  permalink: /bug
+  description: Relating to a bug.
+
+v16:
+  label: WinBidPro v16
+  permalink: /v16
+  description: Relating to v16 of WinBidPro.
+
+v15:
+  label: WinBidPro v15
+  permalink: /v15
+  description: Relating to v15 of WinBidPro.

@@ -1,0 +1,86 @@
+---
+title: List Filtering
+sidebar_position: 2
+---
+
+Most lists in WinBidPro have in-depth filtering options for each column, and can be applied to more than one column at a time.
+
+To set a filter, click the <img src="/screenshots/filter-icon.png"/> filter icon in the column header. 
+
+As you change the filters, the list will update to show how the filtered results and you can confirm it by clicking the `Filter` button. See below for the different filtering options available in the filter menu.
+
+## Filter by Value <img align="right" src="/screenshots/filter-options.png"/>
+
+* ☑ `Select All` - If checked, no values are hidden.
+
+* Below `Select All` is a list of values used in this column, each with a ☑checkbox.
+
+    * If the column has no values, you'll see `[null]` instead. 
+    * If one or more values are checked, the unchecked ones will be hidden.
+    * If none are checked, the filter will default to showing all values.
+    
+## Filter by Condition
+Below the listed values, you'll see 5 lines. These are conditional filters.
+
+Lines 1 and 2 are for one condition. Lines 4 and 5 are for a second condition, if needed.
+
+Line 3 sets the relationship between the two conditions.
+
+### Conditions
+Conditions have two lines each. The first line is an operator which has a list of options, the second is a value that can be any input you type.
+
+* `Operator` - These are things like `Contains`, `Is not equal to`, and `Starts with`. Operators are usually looking for a `Input` before they become active.
+* `Input` - This can be anything typed value.
+
+    * <img src="/screenshots/case-match.png"/> `Match Case` - Toggles case matching if upper and lower case matters for your input.
+
+### And / Or
+The third line creates a relationship between both filters and is limited to the options `And` and `Or`.
+
+* `And` - Values that **meet both conditions** will remain visible.
+
+* `Or` - Values that meet one or the other condition or both conditions will remain visible.
+
+## Confirm / Clear
+
+* `Filter` - Confirm filter settings.
+
+* `Clear Filter` - Clear previously confirmed filter settings.
+
+## Examples
+
+:::tip
+    **Example 1** - Only show systems with a black finish
+
+    1. Click the filter icon in the `Finish` column header.
+    2. Check ☑ `Black` in the listed values.
+    3. Click `Filter`
+:::
+
+:::tip
+    **Example 2** - Only show systems that have `SF-` in their mark
+
+    1. Click the filter icon in the `Mark` column header.
+    2. Leave all listed values unchecked or check ☑ `Select All`
+    3. Set the first condition.
+        * Set Line 1 to `Starts with`
+        * Set Line 2 to `SF-`
+    4. If there are marks with `sf-` alongside marks with `SF-`, toggle `Match Case` so only `SF-` values stay visible.
+    5. Leave Lines 3-5 on their default values.
+    5. Click `Filter` 
+:::
+
+:::tip
+    **Example 3** - Only show systems with `storefront` OR `shear block` in their name
+
+    1. Click the filter icon in the Framing/Entrance System column header.
+    2. Leave all listed values unchecked or check ☑ `Select All`
+    3. Set the first condition:
+        * Set Line 1 to `Contains`
+        * Type `storefront` in Line 2
+    4. Set Line 3 to `Or`
+    5. Set the second condition:
+        * Set Line 4 to `Contains`
+        * Type `shear block` in Line 5
+    6. Click `Filter` 
+:::
