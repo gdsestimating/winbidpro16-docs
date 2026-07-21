@@ -1,0 +1,81 @@
+---
+title: Navigation
+sidebar_position: 1
+---
+
+## List Views
+
+* `Scroll` - While your cursor is over a list, you can use your mouse wheel to scroll up and down through it.
+* `Right-click` - In some cases, like the `Job Explorer`, you can right click in the empty space of the window to get some quick options.
+
+## CAD Views
+
+* `Zoom` - Use your scroll wheel to zoom in and out in a viewport.
+* `Pan` - Hold right-click and drag to pan around a viewport.
+
+### View Tools
+
+<img src="/screenshots/ViewerTools.png"/><br/>
+
+Whenever you're in a CAD view, you'll see a handful of options in the top right corner. This list goes through each of these, left to right.
+
+* `Measure` - See Measurement section below for more details.
+
+* `Zoom to Fit` - Automatically zooms to fit the entire CAD drawing in the view
+* `Zoom Window` - Allows you to drag a selection area and zooms to it
+* `Zoom` - Toggles click-and-drag zoom. Click and drag up to zoom in and drag down to zoom out
+* `Pan` - Toggles click-and-drag panning for left-click
+
+### Point-Snap
+
+Some tools in WinBidPro, like setting a rake or the measurement tool, will snap to specific points on the elevation by default. These are the `▢` endpoints and `△` midpoints of parts in your assemblies.
+
+* Snap points will show up as green squares and triangles while the tool is active.
+* When you get close to a point, it will switch to yellow. 
+    * If you left-click while they're yellow, the tool with automatically set the first point to that point.
+* You can temporarily disable point-snapping by holding the `CTRL` key.
+
+### Measurement
+
+Most CAD views in WinBidPro give you access to a measurement tool (see View Tools above). If you click on the measurement tool icon, you'll be switch to measuring mode. You can hit `Esc` at any point to leave this mode.
+
+While the measuring tool is active, point-snapping is also active (see Point-Snap above).
+
+Once your first point is selected, a `+` marker will be placed on the point, and you'll see a list of live information and options available in the bottom left of the CAD window.
+
+<img src="/screenshots/interface/measure-stats.png"/><br/>
+
+#### Live Information
+
+Updates information as points are placed, or the cursor moves.
+
+    * `Length` - Displays the length between the last point and the current location of your cursor.
+    * `Total` - Displays the total of all measures so far, not including the distance from the last placed point to your cursor.
+    * `Angle` - Displays the angle between the last point and the current location of your cursor.
+
+#### Options
+
+    * `Esc` - Undo the last placed point.
+    * `C` - Copy the `Total` to your clipboard so you can paste it elsewhere.
+    * `D` - Change the angle units from degrees to radians.
+    * `Hold Z` - Lock your cursor to left and right movement only.
+    * `Hold X` - Lock your cursor to up and down movement only.
+    * `V` - Toggle `Length` and `Total` labels near your cursor.
+    * `B` - Toggle point coordinate labels. 
+
+    :::info
+        **Point Coordinates** measured in inches and are displayed as X and Y values relative to the origin point of your elevation. X values are your horizontal location, Y values are your vertical location. 
+        
+        The **origin** will read as `X = 0", Y = 0"` and is always where the lowest point and left-most point intersect, even if there is no framing there (ex: bulkheads).
+    ::: 
+
+When you click at least two points, the tool will draw a line between them and the length of that line will be labelled 
+
+### Selecting Elements & Panels
+
+Some options will ask you to select one or more panels or elements. When these are selected, you’ll see them highlighted in green with a green check icon drawn for panel selections. 
+
+<div class="app-img"><img src="/screenshots/panel-selection.png"/></div>
+
+
+In many cases, a set of quick selection tools in the bottom left corner of the previewer. In the above example, these buttons will select `All` panels, `Odd` or `Even` numbered panels, or deselect all panels with `None`.

@@ -1,5 +1,6 @@
 ---
 title: Title Blocks
+sidebar_position: 4
 ---
 
 Including title blocks in your shop drawings are a powerful way to make your shop drawings look like they were prepared by a professional CAD shop, but with just a few easy clicks.
@@ -45,7 +46,7 @@ After clicking ```Save``` regenerate the drawing to see your added attributes.
 <div class="app-img"><img src="/screenshots/edit-attributes3.png"/></div>
 
 ## Predefined Attributes
-**The following attributes will automatically be filled in by WinBidPro unless overriden in the ```Edit Title Block Attributes``` list.**
+**The following attributes will automatically be filled in by WinBidPro unless overridden in the ```Edit Title Block Attributes``` list.**
 
 - JOBNAME
 - ESTIMATOR
@@ -62,7 +63,7 @@ Attributes are saved to each job. In the future we will look at making attribute
 To create or modify a Title Block, you need to know a little about using a CAD program. We know how difficult CAD can be, but thankfully Title Blocks tend to be some of the easiest things to draw in CAD. Most of the time Title blocks can be drawn with just simple lines, text, and these things called Attribute Definitions (or just Attributes).
 
 :::tip
-If you don't know CAD, but want a truly profressional and unique Title Block, try finding a company or individual you can pay to make a profressional CAD logo and/or Title Block for you that you can use in WinBidPro.
+If you don't know CAD, but want a truly professional and unique Title Block, try finding a company or individual you can pay to make a professional CAD logo and/or Title Block for you that you can use in WinBidPro.
 :::
 
 Alternatively, you can often search for free Title Blocks on Google search (or Google image search) to use for your purposes. You may also have CAD drawings from previous jobs that were done by a third-party professional CAD shop. You should check to be sure there are not legal restrictions preventing you from reusing such a Title Block before adjusting it for use in WinBidPro.
@@ -85,7 +86,7 @@ Make the title block the size of the page minus the margins of the page. For an 
 You must Save your title blocks files as DXF 2013, DWG 2013, or lower. Later versions of these file formats may not be supported yet.
 
 #### 3. Title blocks can contain anything
-Title blocks can contain anything including your comapany logo, the current date, and notes you want on every drawing. Logos can make a Title Block that much more professional looking.
+Title blocks can contain anything including your company logo, the current date, and notes you want on every drawing. Logos can make a Title Block that much more professional looking.
 
 #### 4. Not all features in modern CAD programs are supported
 In particular, WinBidPro does not support multiline attributes that allow dynamically inserted text to flow onto another line when it runs out of space.
