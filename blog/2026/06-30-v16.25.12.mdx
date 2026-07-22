@@ -1,0 +1,26 @@
+---
+slug: 16.25.12
+title: Update 16.25.12
+authors: GDS
+tags: [v16, bug, feature, improvement]
+---
+
+# New Features:
+* Glass labels (modeled on the cut list labels), with a label menu, selectable presets.
+
+* Rendering Mode: A new editor setting lets you pick the rendering mode that produces the best result for different shop drawing outcomes.
+
+# Improvements:
+
+* Added crash diagnostics and tracing for Eyeshot drawing/rendering failures, so these crashes are captured with more context and the app handles them more gracefully.
+
+# Bug Fixes:
+
+* Fixed lites not drawing on frameless interior systems with zero-profile heads and sills -- a regression introduced when we switched to a lower-cost lite creation function.
+
+* Refined the caulk region logic following the 2026 Eyeshot update, where under specific circumstance the caulk hatch could bleed into the elevation.
+
+* Improved cover page reliability with additional error handling.
+
+* Fixed the assembly detail control.
+
