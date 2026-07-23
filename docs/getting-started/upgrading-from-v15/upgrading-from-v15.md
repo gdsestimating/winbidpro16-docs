@@ -5,8 +5,9 @@ sidebar_position: 10
 
 # Upgrading from v15 to v16
 
-This page answers the most common questions about transitioning from WinBidPro v15 to v16.
-
+:::info
+    This section covers most topics, and answers the most common questions about transitioning from WinBidPro v15 to v16.
+:::
 ---
 
 ## How Data Works in v16

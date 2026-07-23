@@ -1,15 +1,27 @@
 ---
-title: List Filtering
+title: List Groups & Filters
 sidebar_position: 3
 ---
 
-Most lists in WinBidPro have in-depth filtering options for each column, and can be applied to more than one column at a time.
+To help you review and organize your lists, most lists in WinBidPro have group and filter options. These can be applied to more than one column at a time to create customized views.
+
+## Groups
+
+Groups will organize your lists into sections based on the different values found in each column. To set your groups, simply drag the column header into the groups area at the top of the list. 
+
+If a list has grouping active, you'll see the grouped column in light blue this area. You can change the sorting option for each group by clicking this blue box, or you can delete this grouping by clicking the `X`.
+
+<div class="app-img"><img src="/screenshots/interface/list-grouping.gif"/></div>
+
+
+
+## Filters
 
 To set a filter, click the <img src="/screenshots/filter-icon.png"/> filter icon in the column header. 
 
 As you change the filters, the list will update to show how the filtered results and you can confirm it by clicking the `Filter` button. See below for the different filtering options available in the filter menu.
 
-## Filter by Value <img align="right" src="/screenshots/filter-options.png"/>
+### Filter by Value <img align="right" src="/screenshots/filter-options.png"/>
 
 * ☑ `Select All` - If checked, no values are hidden.
 
@@ -19,14 +31,14 @@ As you change the filters, the list will update to show how the filtered results
     * If one or more values are checked, the unchecked ones will be hidden.
     * If none are checked, the filter will default to showing all values.
     
-## Filter by Condition
+### Filter by Condition
 Below the listed values, you'll see 5 lines. These are conditional filters.
 
 Lines 1 and 2 are for one condition. Lines 4 and 5 are for a second condition, if needed.
 
 Line 3 sets the relationship between the two conditions.
 
-### Conditions
+#### Conditions
 Conditions have two lines each. The first line is an operator which has a list of options, the second is a value that can be any input you type.
 
 * `Operator` - These are things like `Contains`, `Is not equal to`, and `Starts with`. Operators are usually looking for a `Input` before they become active.
@@ -34,20 +46,20 @@ Conditions have two lines each. The first line is an operator which has a list o
 
     * <img src="/screenshots/case-match.png"/> `Match Case` - Toggles case matching if upper and lower case matters for your input.
 
-### And / Or
+#### And / Or
 The third line creates a relationship between both filters and is limited to the options `And` and `Or`.
 
 * `And` - Values that **meet both conditions** will remain visible.
 
 * `Or` - Values that meet one or the other condition or both conditions will remain visible.
 
-## Confirm / Clear
+### Confirm / Clear
 
 * `Filter` - Confirm filter settings.
 
 * `Clear Filter` - Clear previously confirmed filter settings.
 
-## Examples
+### Examples
 
 :::tip
     **Example 1** - Only show systems with a black finish
