@@ -96,8 +96,8 @@ const config = {
             type: 'docsVersionDropdown',
             position: 'left',
             versions: {
-              '15': {label: 'V15 Docs'},
               current: {label: 'V16 Docs'}, 
+              '15': {label: 'V15 Docs'},
             },
           },
           {
