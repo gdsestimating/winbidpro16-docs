@@ -1,6 +1,6 @@
 ---
 title: Cover Page
-sidebar_position: 4
+sidebar_position: 6
 ---
 
 # Cover Page Feature Guide

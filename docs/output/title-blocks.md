@@ -1,6 +1,6 @@
 ---
 title: Title Blocks
-sidebar_position: 4
+sidebar_position: 5
 ---
 
 Including title blocks in your shop drawings are a powerful way to make your shop drawings look like they were prepared by a professional CAD shop, but with just a few easy clicks.
