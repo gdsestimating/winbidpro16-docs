@@ -3,3 +3,87 @@ title: Shop Drawings
 sidebar_position: 4
 ---
 
+<div class="app-img"><img src="/screenshots/sample-shop-drawings.png"/></div>
+
+## Page Setup
+
+Use this section to set how your pages are printed when pressing the `Print All` or `Print Selected Page(s)` options.
+
+:::tip
+    When using a title block, you'll want to make sure the it's meant for your `Page Size` and `Orientation` to avoid too much white space or cropped out information.
+
+    Title blocks provided by WinBidPro are named based on their size and orientation. For example: 
+    
+    * '16-TitleBlock-8.5x11-Landscape.dwg` is a v16 title block meant for a letter-sized print (8 1/2" x 11") in landscape orientation.
+:::
+
+* ☑ `Use different layer settings for shop drawings` - Change which layer settings to use for your shop drawings. 
+
+    * See the [Layer Settings](../getting-started/interface/sidebar#layer-settings) for more details.
+
+## Elevation Sheet Settings
+
+* `Elevation Scale` - Set the scale of elevations on your sheets.
+
+* `Elevation Distribution` - Select how many elevations should show per sheet. Options include:
+
+    * `1 Per Sheet` - Forces only one elevation per sheet, regardless of size and spacing.
+
+    * `Multiple Per Sheet` - Will add multiple elevations onto the same sheet when there is enough space.
+    
+        * `Elevation Spacing` - Amount of white space to put between your elevations, measured in inches. 
+
+* ☑ `Show Panel Numbers` - Toggles WinBidPro panel identifiers.
+
+* ☑ `Show Glass` - Toggles typical hatch patterns for glass material.
+
+* ☑ `Include Title Block` - Toggles the selected title block on all sheets.
+
+* `Title Block File` - Sets the title block to use with your shop drawings.
+
+* `Padding` - The spacing around the elevations measured in inches. Use this to change where the elevations sit to adjust to different title blocks.
+
+    * `T` - Top - padding in inches above the elevation.
+
+    * `B` - Bottom - padding in inches below the elevation.
+    
+    * `L` - Left - padding in inches left of the elevation.
+    
+    * `R` - Right - padding in inches right of the elevation.
+
+
+* `Edit Title Block Attributes` - Opens the Title Block attributes window.
+
+    * See the [Title Blocks](./title-blocks) doc for more details.
+
+## Detail Sheet Settings
+
+* ☑ `Include Details` - Toggle including detail sheets for your assigned framing systems.
+
+* `Scale` - Set the scale of frame details.
+
+* `Spacing` - Set the spacing between details on your sheets, measured in inches.
+
+## Cover Page
+
+* ☑ `Include Cover Page` - Toggle generating a cover page with your sheets.
+
+* `Edit Cover Page` - Opens the Cover Page configuration window. 
+    
+    * See the [Cover Page](./cover-page) doc for more details.
+
+## Output
+
+* `Generate Pages` - Click this button to generate the pages after settings all the desired options.
+
+:::tip
+    Changes made to any settings will keep your other settings intact, but you'll clear any generated pages and you'll need to to click `Generate Pages` again. 
+    
+    It's best to set all your options before you click this button to avoid having to regenerate.
+:::
+
+* `Export to DWG / Export to DXF` - After your pages are generated, you can export them to CAD-friendly files .DWG and .DXF.
+
+* `Print All` / `Print Selected Page(s)` - After your pages are generated, you can send them to your printer or print to .PDF based on your settings in `Page Setup` (see above).
+
+* `Close` - Click to exit this window.
