@@ -1,12 +1,56 @@
 ---
-title: Manually Changing Parts Lists
+title: Manually Adding Parts to Reports
 sidebar_position: 1
 ---
 
-* Manual Edits:
+Some reports, like the [Final Parts](../finalize#final-parts) and the [Cut List](../finalize#cut-list), can have parts manually added. See below for the options available.
 
-    * <img src="/screenshots/reports/add-icon.png"/> `Add Part` - 
+## Toolbar Options
 
-    * <img src="/screenshots/reports/trash-icon.png"/> `Delete Part` - 
+<div class="app-img"><img src="\screenshots\reports\manual-toolbar.png"/></div>
 
-    * <img src="/screenshots/reports/undo-icon.png"/> `Undo` - 
+* <img src="/screenshots/reports/add-icon.png"/> `Add Part` - Add a part adhoc from your catalog. See Adding Parts section below for more details.
+
+* <img src="/screenshots/reports/undo-icon.png"/> `Undo` - Undo the last manual change made.
+
+* <img src="/screenshots/reports/trash-icon.png"/> `Delete Part` - Delete the selected line item from the list.
+
+
+### Adding Parts
+
+Clicking `Add Part` will bring you to new a window where you can select a part from your catalog to add manually. 
+
+<div class="app-img"><img src="\screenshots\reports\add-part.png"/></div>
+
+Here you'll search for, or type in a part number to add. Parts in this way can only added from the existing catalog. 
+
+When you add a part, it will automatically fill in values from the catalog like `Description` and `Package Quantity`. You'll have the option to set some values here before saving your changes, including:
+
+* `Quantity`
+
+* `Multiplier`
+
+* `Finish` - Required for frame extrusions and some other parts.
+
+* `Reason` - Optional note to explain the manual addition.
+
+
+#### Reviewing Manual Entries
+
+
+
+Whether you add a completely new part to the list or add entries to an existing part, the line item will change to bolded text to show there's been a manual change.
+
+<div class="app-img"><img src="\screenshots\reports\manual-expanded.png"/></div>
+
+Clicking the **`+`** `Expand` button on the far left of the line item, the part will list out all entries effecting the count. Here you can review how the parts were added under the `source` column where you can see how many were `Generated` from your elevations, and how many were `ManualAdded`. You'll also be able to see your `Reason` notes here.
+
+## Inline Edits
+
+For some columns in report views, you can double-click the cell to type in a new value. `Package Pricing` or `Multipliers` are examples of this in the `Final Parts` report.
+
+Most values cannot be directly changed from report views. You can change these or add entirely new parts from the `Parts` window found in the `Catalog` toolbar menu, or from the `Job Parts` window found in the `Job` toolbar menu. 
+
+:::danger
+    Please keep in mind, manual edits to vendor catalogs should be checked carefully against the vendor's official releases to ensure they're accurate, and to avoid issues with your estimates and orders.
+:::
