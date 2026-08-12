@@ -5,7 +5,7 @@ import { themes as prismThemes } from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'WinBidPro Docs',
-  tagline: 'Welcome to the WinBidPro Documentation. Click below to start learning our software.',
+  tagline: 'Welcome to the WinBidPro Documentation',
   url: 'https://docs.winbidpro.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
