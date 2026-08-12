@@ -3,12 +3,81 @@ title: Labor
 sidebar_position: 6
 ---
 
+When labor is applied to your elevations, the base costs are automatically added to your estimate through `Labor Rulesets` and `Settings`. 
+
+`Labor Rules` are how task hours are calculated and which rate to use with them on your elevations. 
+
+    * Rules are collected into `Labor Rulesets` -- by different installation types like Shear Block or Screw Spline, for example -- to quickly apply rules to your elevations. 
+
+    * Rules and rulesets are fully customizable and be as honed in or rough as needed, or not applied at all if you prefer to do it yourself.
+
+`Labor Settings` are more generalized -- things like the rates for different categories of tasks (ex: installation versus fabrication), or thresholds for when more than one person is needed for a task.
+
+
+
+## Configuring Labor
+
+You can find the Labor options for your current job in the `Job` toolbar menu under `Labor Rules & Settings`.
+
+To set up or change rulesets, rates, and other settings for your organization and all jobs moving forward, go to `Labor Settings` under the `Settings` toolbar menu.
+
+* See [Local & Global Edits](./config-levels) for more details on how this works.
 
 ## Labor Rules
+
 <div class="app-img"><img src="/screenshots/reports/labor-rules.png"/></div>
 
+* `Category` - The category of labor determining the base rate of the task. 
+
+    * You can set the rates for each of these in the `Settings` tab, see below.
+    
+* `How Applied` - Defines how a task is calculated from the conditions found in your elevations.
+    
+    * Options include things like `Per Joint` or `Per foot of Elevation Perimeter`.
+    
+* `Minutes` - Estimated time it would take to complete the task.
+
+:::info
+    ### Example
+
+    If the Panel Fab rule has has these values: 
+    
+        * `Category`: Fabrication
+            * Fabrication Rate is $40.00/hr (found in the `Settings` tab)
+        * `How Applied`: Per Panel
+        * `Minutes`: 10
+
+
+    So if your elevation has 12 panels in it, applying this rule to your elevation will add 120 minutes to the job, and $80.00 to the base cost of your estimate.
+:::
+
+
+### Rulesets
+
+WinBidPro includes some default `Labor Rulesets` to get you started but most companies have their own way of calculating these. It's best to review the default rulesets before you get started, and add new ones or make adjustments where you need to. 
+
+
 ## Labor Settings
+
+
 <div class="app-img"><img src="/screenshots/reports/labor-settings.png"/></div>
 
-## Labor Breakdown
-<div class="app-img"><img src="/screenshots/reports/labor-breakdown.png"/></div>
+Labor settings include:
+
+* `Glazing Labor Defaults`
+
+    * `Max Weight Lifted Per Worker` - Threshold for weight in pounds for the amount of workers needed for a task by.
+
+    * `Threshold at which Equipment is Required` - Threshold for weight in pounds for when special equipment is needed to complete a task.
+
+    * `Workers needed when using Equipment` - Amount of workers needed once equipment threshold is met.
+
+* `Labor Rates` - Rates for labor categories. Costs are assigned here and are applied by category as part of the `Labor Rules`. Categories include:
+
+    * `Fab Rate`
+    
+    * `Install Rate`
+    
+    * `Glazing Rate`
+    
+    * `Misc Rate`
