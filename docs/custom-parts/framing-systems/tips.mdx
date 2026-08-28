@@ -3,3 +3,114 @@ title: Tips - Framing System Types
 sidebar_position: 7
 ---
 
+## Tips
+
+These configurations are officially supported in WinBidPro v16 but have some added set up when first configuring them.
+
+### Can / Stick Systems
+
+:::info
+    For these, we want to have vertical assemblies slot into the head and sill so that they're cut correctly. This is especially important for raked elevations.
+:::
+
+* `Head Assembly` / `Sill Assembly`
+
+    * Set the `Reveal` to 0"
+
+* `Head Receptor` / `Sill Receptor`
+    
+    * Set the `Vertical Trim` to match the dimension from the base of the receptor profile to the vertical framing. 
+    
+    * See here for example:
+
+<div class="app-img"><img src="/screenshots/configuration/vertical-trim.png"/></div>
+
+### SSG Systems
+
+:::info
+    These are some additional settings made to specifically handle SSG conditions.
+:::
+
+* In the `Settings` tab, set your `SSG Type`.
+    
+    * `None` 
+    * `Vertical SSG`
+    * `Horizontal SSG`
+    * `4-Sided SSG` - (vertical & horizontal)
+
+* In the `Components` tab, toggle `Is SSG` in your vertical / horizontal assemblies.
+
+    * Set the `Silicone Width` for each assembly.
+
+
+
+## Tricks
+
+These configurations are not supported with dedicated settings, but you can approximate them by following the steps below.
+
+### Butt Glazed Systems
+
+:::info
+    The key for these systems is to set a continuous head and sill receptor, then create verticals / jambs with small profiles and no glass bites.
+:::
+
+<div class="app-img"><img src="/screenshots/configuration/butt-glaze.png"/></div>
+
+
+
+* In the `Settings` tab, toggle on `Has Head Receptor` and `Has Sill Receptor`
+
+* In the `Components` tab:
+
+    * `Head Receptor` / `Sill Receptor`
+
+        * Add your extrusion parts here.
+        * Match the `Vertical Trim` to the `Profile` dimension.
+
+    * `Head Assembly` / `Sill Assembly`
+
+        * Leave these assemblies empty.
+
+    * `Vertical Assembly` / `Left Jamb Assembly` / `Right Jamb Assembly`
+
+        * Create a new assembly.
+        * Set `Profile` to the recommended size of the gap between glass lites.
+        * Set `Glass Bite` to 0"
+        * `Parts`
+            * For silicone, add or create a new part via the `+Browse List` button
+                * See [Configuring Parts](../config-parts.mdx) for more details.
+            * For an air gap, you can leave the parts list empty.
+
+### Brake Metal / Structural Gaps
+
+:::info
+    By creating extra panels with 0" widths, we can triple up verticals and set the middle vertical to an alternate assembly to represent a structural gap.
+:::
+
+:::warning
+    <img align="right" src="/screenshots/configuration/break-metal-warning.png"/>
+
+    This trick should only be used for visual reference, not for cost estimation. Verticals cannot interrupt head / sill receptors so the counts for receptors and the break metal will not be entirely accurate. See image on the right for reference.
+    
+    For accurate cost estimates, each side of the structural gap should be separate elevations.
+
+    <br clear="right"/>
+:::
+
+<div class="app-img"><img src="/screenshots/configuration/brake-metal.png"/></div>
+
+
+
+* In the `Components` tab:
+
+    * Create a new `Vertical Assembly`
+        * Do not delete the existing assembly or change the default.
+        * Name the assembly something easy to recognize like `Brake Metal`
+        * Set the `Profile` of your new assembly to the width of the gap.
+        * Toggle on `Interrupt Head` and `Interrupt Sill`.
+
+* In your Elevations:
+
+    * Add two panels in the `Elevation` tab.
+    * For the panels on either side of the gap, add a rule setting the panel width to 0" in the `Adjust Panels` tab.
+    * Set the middle vertical to the new assembly using the `Alternate` tab.
