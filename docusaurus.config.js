@@ -107,7 +107,10 @@ const config = {
             label: 'Glossary',
             position: 'left',
           },
-          { to: '/blog', label: 'Patch Notes', position: 'left' },
+          // { link: '/blog',
+          //   label: 'Patch Notes', 
+          //   position: 'left' 
+          // },
         ],
       },
       footer: {
