@@ -1,6 +1,43 @@
 ---
-title: Joints
+title: Joints Tab
 sidebar_position: 3
 ---
 
+:::tip
+    The `Joints` tab is meant for systems where joint conditions vary. In these cases, it's best to use this tab for **all** joints in a system, and exclude hardware (but not extrusions) from your `Components` tab assemblies.
+
+    For systems where hardware is consistent when similar joints meet, it may be simpler to include hardware in the assemblies.
+:::
+
+---
+
+Using the `Joints` tab, you can set rules to add parts at specific assembly intersections. You won't use this tab for every system, but it may be needed with complicated systems to accurately add parts from elevations. 
+
 <div class="app-img"><img src="/screenshots/configuration/config-frame-joints.png"/></div>
+
+## Options
+
+* <img src="/screenshots/reports/trash-icon.png"/> `Delete Joint Configuration`
+
+* `+ Add Joint Configuration`
+
+
+## Joint Configuration
+
+Joint configuration follows a "`When` X `Meets` Y, add Z" structure. For example, when any head assembly meets any vertical, add a shear block.
+
+* `When` / `Meets` - Set two assemblies and / or assembly types. Establishes where to add the part.
+
+    * Options here cover a wide range of a assembly types and conditions, and can even be set to a specific assembly in the case of alternates.
+
+* `Use These Parts:` - Add parts based on a specific joint condition. The options are as follows:
+
+    * `Per Joint End` - These parts are added once for each joint where the specified assemblies meet.
+
+    * `End Plug` - These parts are added when a joint meets a captured mullion, typically used to seal or finish the end of structural members.
+    
+    * `Zone Bridge` - These parts are added when captured joints bridge an SSG mullion, used to span across structural gaps.
+
+:::tip
+    If you have an active elevation open, it can be helpful to use the [Joints tool tab](../../drawing-elevations/joints) to review how this configuration will apply.
+:::

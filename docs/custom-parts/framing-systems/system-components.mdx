@@ -1,0 +1,62 @@
+---
+title: Components Tab
+sidebar_position: 2
+---
+
+:::info
+    This page includes details and tips for the components tab of Framing Systems.
+
+    For a general overview of components, see [Working with Components](../components).
+:::
+
+---
+
+<div class="app-img"><img src="/screenshots/configuration/config-frame-components.png"/></div>
+
+## Component Types
+
+### Assemblies
+* `Head Assemblies` - Horizontal frame assemblies at the top edge of the opening.
+    
+    * `Head Receptor` - Head components used for anchoring or other edge cases where the `Head Assembly` needs to be adjusted to meet system-specific conditions.
+
+* `Horizontal Assemblies` - Any intermediate horizontal frames assemblies.
+
+* `Sill Assemblies` - Horizontal frame assemblies at the bottom edge of the opening.
+
+    * `Sill Receptor` - Sill components used for flashing, anchoring, or other edge cases where the `Sill Assembly` needs to be adjusted to meet system-specific conditions.
+
+:::tip
+    To calculate verticals slotting into Can / Stick systems, those systems will typically use `Head Receptor` and `Sill Receptor` for their heads and sills.
+
+    See [Can / Stick Systems](./can-stick) for more details on how to configure these.
+:::
+
+* `Left Jamb Assemblies` / `Right Jamb Assemblies` - Vertical frame assemblies at the left and right edge of the opening.
+
+* `Vertical Assemblies` - Intermediate vertical frame assemblies.
+
+:::tip
+    Butt glazed systems can be achieved by setting the profile of the `Vertical Assembly` to 0".
+
+    See [Butt Glazed Systems](./butt-glaze) for more details on how to configure these.
+:::
+
+
+* `Stops` / `Operable Window Adapters` - Special assemblies for use at panels / openings. These are the same components found in the Opening Options tab.
+
+    * See [Opening Options](./opening.md) for more details.
+
+### Other
+
+Other components cover individual parts applied at common conditions including:
+
+* `Glazing Gasket` - Measures the perimeter of the DLO + Glass Bite for each glass panel in an elevation to generate the length of these parts.
+
+    * 
+
+* `Perimeter` - Measures the perimeter of the framing system to generate the length of the these parts.
+
+* `Per Elevation` - Multiplies these parts by the number of times this framing system is applied to elevations in your job.
+
+* `Per Lite` - Multiplies these parts by the number of panels in the elevations that have this framing system applied.

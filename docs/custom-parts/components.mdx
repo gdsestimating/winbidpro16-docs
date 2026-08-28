@@ -1,0 +1,121 @@
+---
+title: Working with Components
+sidebar_position: 2
+---
+
+Component tabs are WinBidPro's method of handling part assemblies and conditions-specific parts. These are recipes that turn individual parts and conditions into counts when applied to your elevations.
+
+:::info
+    This page is a general overview of components and assemblies. See [Framing System Components](./framing-systems/system-components) for more details on components in systems.
+:::
+
+<div class="app-img"><img src="/screenshots/configuration/config-frame-components.png"/></div>
+
+## Assembly Components
+Assemblies are split up into different components. These components can store multiple assemblies, setting one as the default and using the others as alternates where needed.
+
+The options in the header of these components are used to manage these assemblies, while configuration is handled in a separate window.
+
+* Component Header
+
+    * <img src="/screenshots/configuration/add-component.png"/> `Add` - Create a new assembly. Opens the assembly configuration window. See the next section for details.
+
+    * `Paste` - This button appears next to the `Add` button when you copy an assembly. See `Copy` below.
+
+* Assembly Headers
+
+    * `▲` `Move Up` / `▼` `Move Down` - Organize your list of assemblies within the component.
+
+        * The first assembly in the list is the default assembly. Any additional ones will be available as alternates but are not automatically applied.
+
+    * <img src="/screenshots/configuration/copy.png"/> `Copy` - Copy the assembly to paste it in another component. See `Paste` above.
+
+        * Useful for systems with identical left and right jambs, for example.
+
+    * `X` `Delete` - Delete this assembly.
+
+    * <img src="/screenshots/configuration/edit.png"/> `Edit` - Open the configuration window for this assembly.
+
+    * `⋀` `Collapse` / `⋁` `Expand` - Show or hide details about this assembly, including a list of parts.
+
+        * With your assembly expanded, you'll also see options to `X` delete or `+Add item` for individual parts, and options to change the `Profile` and `Reveal` for some component types without having to open the configuration window.
+
+### Configuring Assemblies
+
+<div class="app-img"><img src="/screenshots/configuration/config-component.png"/></div>
+
+:::tip
+    As you're configuring assemblies, keep in mind which parts should be added to which component, and how it will all come together. Incorrect assemblies can add or subtract lengths to cuts or area to glass in your estimates.
+
+    For example -- Sill Flashing should be a Sill Receptor component, not a Sill component, because of how it interacts with jambs and verticals, and how it would change the profile of the sill if it were included.
+
+    As you configure your system, having an elevation open in the CAD viewer can help visualize how everything is coming together. You can take it a step further with [layer settings](../getting-started/interface/sidebar#layer-setttings), and set different colors for different component types.
+:::
+
+#### Component Properties
+
+* `Name` - A place to name your assembly to help it stand out against alternates in the same list.
+
+* `Profile` - The height of the visible face of your assembly when looking at it in elevation.
+
+:::note
+    Assemblies are split up into different types, and their Component Properties. Most assemblies will have options for a `Name` and a `Profile` at a minimum.
+    
+    For example - framing assemblies (Head, Jamb, Vertical, Etc) will have an option for Glass Bites, but Head and Sill Receptor assemblies won't.
+:::
+
+
+`File:` - Specify, delete, refresh or upload a CAD detail file. A CAD detail added here will show up in the CAD view just below these options.
+
+`Label:` - Set a label tag or number.
+
+
+#### Part Tabs
+
+The part tabs are where you add individual parts of your assembly for each detail. These tabs are broken up into general parts and splice parts. 
+
+* General parts are always active.
+
+* Splice parts only get counted where splices are applied.
+
+`Part Options` - Select a part from the assembly configuration to set part details like `Quantity` and `Spacing`.
+
+`Browse List` - Browse for parts in your vendor catalog to add to the assembly. Refer to vendor details and installation instructions for where each part should be applied
+
+`Configure Splice Gap & Offset` - Splices Tab only. Opens 3D CAD view of your splice with option to set spacing and offsets for each part. Mainly used in curtain wall and window wall systems to coordinate face covers, pressure plates and back members.
+
+* See [Splices](./framing-systems/splices) for more details.
+
+:::tip
+    Keep in mind, these changes effect your estimates so it's important to think through where assemblies meet.
+    
+    For example -- you'll want to consider when things like fasteners should be included at one assembly or the other, to avoid adding them to both and doubling your counts.
+:::
+
+
+
+## Other Components
+
+Others components are grouped and listed by how they're counted - `Per Elevation` or `Perimeter` for example. These are simplified lists of `Part Numbers` and `Quantities` that get count by that condition.
+
+:::info
+    As you type out part numbers in these components, you'll get a list of suggestions to help speed things up.
+:::
+
+For length-based conditions, like `Perimeter`, you'll also get an option to automatically add or subtract a length in inches to each counted length but using the `+/- Length` box. Use this to help dial in your drops, clean cuts, tolerances, etc.
+
+:::tip
+    #### 'Per X' Example
+
+    If a `Part Number` is added with a `Quantity` of 2 as a `Per Elevation` component, and you have 10 elevations with that system assigned, your parts list will count 20 of that part.
+:::
+
+:::tip
+    #### Length Example 
+    If a `Part Number` is added with a `Quantity` of 1 as a `Perimeter` component, and you have a 10'-0" x 10'-0" elevation, your parts list will count a length of 40'-0" of that part for that elevation. 
+    
+    If you add a `+/- Length` of -2, it will count 39'-10" instead.
+:::
+
+
+

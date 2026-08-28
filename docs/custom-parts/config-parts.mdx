@@ -1,0 +1,102 @@
+---
+title: Configuring Parts
+sidebar_position: 1
+---
+
+:::danger
+    Making changes to existing parts will effect your estimates based on how and where they're used in your jobs.
+
+    **Carefully consider any changes you make before saving them!**
+:::
+
+
+## Parts Catalog
+
+The part catalog will include all parts available under a specific vendor. 
+
+Using this list, you can quickly change specific part properties for existing parts by double-clicking it, then typing or selecting a new value.
+
+:::tip
+    The part list will include all parts of all types for a vendor, making them the longest list of any catalog.
+    
+    If you're looking for something specific, be sure to use the search feature, or organize and limit the list using [List Groups & Filters](../features-and-tips/filters).
+:::
+
+### Options
+
+* <img src="/screenshots/reports/add-icon.png"/> `Add Part` 
+
+* <img src="/screenshots/reports/trash-icon.png"/> `Delete Part`
+
+* <img src="/screenshots/configuration/edit.png"/> `Edit Part` - Open the configuration window for an existing part.
+
+* <img src="/screenshots/configuration/copy.png"/> `Copy Part` - Open the configuration window for a copy of the selected part
+
+* <img src="/screenshots/reports/printer-icon.png"/> `Print` - Quick access to the print-ready versions of this list.
+
+* <img src="/screenshots/reports/export-icon.png"/> `Export to CSV` - An export option for use in spreadsheet apps like Excel. 
+    
+    * See [Exporting CSV / Spreadsheets](../output/spreadsheets) for more details.
+
+* `Change Multipliers...` - Apply a price multiplier to all currently visible parts at once.
+
+* `Sync Parts...` - This will add new parts and make updates to existing parts based on changes from the GDS preconfigured vendor catalogs.
+ 
+:::warning
+    While syncing parts with the GDS preconfigured catalogs will not automatically remove your custom parts, if they share a part number with a preconfigured part that's been added since the last sync, your new part may be overwritten. 
+    
+    Custom values you've set on existing parts will be overwritten, except for certain values like `Catalog Code` and `Catalog Vendor`.
+:::
+
+## Configuring a Part
+
+If you add a new part to the catalog, or edit an existing one, you'll open up the part configuration window. This is an expanded and focused view of the parts catalog and its properties.
+
+<div class="app-img"><img src="/screenshots/configuration/parts-config.png"/></div>
+
+* `Part Number` - A unique part identifier.
+
+* `Description` - A descriptive name for the part.
+
+* `Part Type` - Some part types will only show up in specific contexts. 
+
+    * Ex: The `Door Frame` type will only show up in reports and options related to entrances and the `Final Parts` list.
+
+* `Handling` - How pricing is generated for this part. Options include:
+
+    * `Count` - Used for parts with pricing based on quantity.
+
+    * Measure - Used for parts with pricing based on length. Measured parts can be be Optimized or Not Optimized.
+    
+        * `Measure (Not Optimized)` - Covers most measured parts.
+
+            * `Length` - Stock length of a part.
+        
+        * `Measure (Optimized)` - Measured parts optimized via the [cut list](../finalize#cut-list) and [stock list](../finalize#stock-list). Usually reserved for frame extrusions.
+
+            * `Length` - Stock length of a part.
+        
+            * ☑ `Allow breaks w/o full splice` - Toggle whether breaks in cut lengths need a splice condition.
+
+            * ☑ `Do not apply finish clean up cuts` - Toggle clean up cuts included in cut optimization.
+
+* `Package Quantity` - Tracks the amount of parts included in a standard package for pricing estimates.
+
+* `Weight` - Measured in pounds. Tracks the weight of a part for labor cost estimates. 
+    * See [Labor Settings](../features-and-tips/labor#labor-settings) for more details.
+
+* `Catalog Code` / `Catalog Page` - Reference codes / page numbers from the vendor's price books and / or part catalogs.
+
+:::tip
+    `Catalog Code` and `Catalog Page` are only used for easy reference to vendor catalogs. If you want to set your own internal reference numbers, it won't effect your counts or estimates.
+:::
+
+### Pricing
+
+* `Multiplier` - A multiplier applied to the part pricing.
+
+* `Mill` - Option to add additional cost for milled parts.
+
+* Per Finish Pricing - Parts have the option to set pricing for each option in the vendor `Finish` catalog. 
+
+    * If a part doesn't have different finish options, use the `No Finish` box for pricing instead.

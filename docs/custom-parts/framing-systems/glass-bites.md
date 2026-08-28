@@ -1,6 +1,6 @@
 ---
-title: Glass Bites
-sidebar_position: 3
+title: Tips - Glass Bites
+sidebar_position: 6
 ---
 
 WinBidPro v16 allows finer control over glass bites than in v15. You can apply a default glass bite to your framing system, and then apply specific bites to individual assemblies.

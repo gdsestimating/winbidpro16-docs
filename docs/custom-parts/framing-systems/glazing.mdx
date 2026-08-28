@@ -1,6 +1,66 @@
 ---
-title: Glazing Options
+title: Glazing Options Tab
 sidebar_position: 4
 ---
 
+:::tip
+    Some of the options here are also covered in a simpler way in the framing system components. 
+    
+    To avoid doubling part counts, it's important to set these options **either** here **or** in the components tab, but not both.
+:::
+
+---
+
+The Glazing Options tab makes it so you can automatically apply alternate parts depending on the glass thickness. This is also where you can set more advanced gasket options, like allowances, or gaskets that run the full length of a vertical.
+
+
+
 <div class="app-img"><img src="/screenshots/configuration/config-frame-glazing.png"/></div>
+
+* `Options` - Set rules to generate part options according to glass thickness.
+
+    * `Thickness` - The glass thickness where these parts are set.
+    
+    <br/>   
+
+    :::info
+        If a glass thickness isn't set by the [Glass Product](../config-glass) or you don't [assign glass products to your elevations](../../drawing-elevations/glass), the glass thickness specified in the frame system's `Settings` tab will be used as a default.
+    :::
+
+    * `Ext. Gasket / Seal` / `Int. Gasket / Seal` - Type in or paste a part number for exterior and interior gaskets / seals.
+
+    * `Ext. Adaptor` / `Int. Adaptor` - Type in or paste a part number for exterior and interior adaptors.
+
+    * `Adaptor Screw` - Type in or paste a part number for adaptor screws.
+
+    * `Spacing` - On-center spacing between adapter screws.
+
+    * `Edge Dist.` - Distance from adapter edge to the first screw.
+
+    * `Setting Block` - Type in or paste a part number for setting block.
+
+    * `Setting Chair` - Type in or paste a part number for setting chair.
+
+    * `Option Label` - For your reference only.
+
+* `SSG Options` - Set rules to generate parts according to glass thickness at SSG verticals/horizontals, specifically.
+
+    * `SSG Options` are the same as `Options` above without the exterior gasket and adaptor.
+
+## Gasket & Adaptor Fabrication
+
+* `Horizontal Gasket` / `Vertical Gasket` - Offset for vertical and horizontal gasket.
+
+    * Gaskets are measured based on the DLO. Depending on the system, you may want to have the horizontal gasket run passed the vertical, or vice versa. You can add the extra length here.
+
+* `Gasket Allowance` - For each foot of gasket, add this length in to the count.
+
+* `Horizontal Adaptors` / `Vertical Adaptors` -  Offset for vertical and horizontal gasket.
+
+    * Adaptors are measured based on the DLO. Depending on the system, you may want to have the horizontal adaptor run passed the vertical, or vice versa. You can add the extra length here.
+
+* ☑ `Vertical adaptor runs continuous` - Toggle to have the vertical adaptor follow the full height of the verticals, instead of following the DLO.
+
+### SSG Adapter Settings
+
+* ☑ `Vertical adaptor at SSG is full width of vertical (1 cut includes both sides)` - Toggle whether the SSG vertical is counted on one side of the SSG or both.
