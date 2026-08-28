@@ -6,6 +6,66 @@ sidebar_position: 1
 
 Your [Elevations](../drawing-elevations/) reference the catalog to generate your parts lists and other reports.
 
+## Core Elements
+
+The core elements of your catalogs are parts, components, and systems. The information contained in each of these, how they come together, and how they apply to your elevations are what drives your estimates.
+
+### Parts
+
+The base building block of WinBidPro catalogs. Usually refers to a vendor's part numbers and pricing. Components and systems point to parts, but parts can also be added directly to reports as needed.
+
+* You can find a list of these by selecting `Parts` under the `Catalog` toolbar menu.
+
+* See [Manually Adding Parts to Reports](../finalize/manual-parts) for details on adding parts to your estimate directly. 
+
+* See [Configuring Parts](../custom-parts/config-parts) for details on configuring parts.
+
+### Components
+
+A set of parts, part quantities, and settings that defines a segment of a system. For example, a head or jamb assembly.
+
+* These are not directly applied to your estimate or elevations, and don't have a dedicated catalog page. Instead, these get configured as part of  `Framing Systems` and `Entrances`, and are automatically counted as those they get assigned.
+
+* See [Working with Components](../custom-parts/components) for details on configuring components.
+
+### Framing Systems
+
+A set of components and rules for how they come together when assigned to an elevation.
+
+* You can see a list of all framing systems applied in your current job by expanding the `Data Tables` of the `Job Explorer` in your sidebar.
+
+* You can change which framing system is applied to your elevations by right-clicking them in the `Job Explorer` and using the `Change Framing System` options
+
+* See [Configuring Framing Systems](../custom-parts/framing-systems) for details on configuring framing systems.
+
+
+### Other Elements
+
+Some elements have special rules for how they're configured and applied. Each of these has their own option under the `Catalogs` toolbar menu where you can review all available options or add new ones.
+
+* `Finishes` - The vendor's list of finish options applied to `Parts`, `Framing Systems`, and other elements.
+
+* `Entrances` - Entrances in WinBidPro refer to preset combinations of `Door Frames` (required) and `Door Leaves` (optional). 
+
+    * These are configured and assigned in the [Entrances tool tab](../drawing-elevations/entrances), or in the punched entrance option when creating a new elevation.
+
+    * `Door Frames` - The settings and `Components` of a framed opening to be used within a framing system or as a punched entrance.
+
+    * `Door Leaves` - The settings and `Components` of a door panel to be hung in a `Door Frame`.
+
+* `Glass Products` - Type, makeup and pricing information for different types of glass.
+
+    * These are assigned to panels in elevation by using the [Glass tool tab](../drawing-elevations/glass). 
+    
+    * Your glass estimate is calculated from the pricing of glass products as they're applied to panels based on their glazed area (DLO + Glass Bite). 
+
+* `Operable Windows Templates` - Type and operation details for different types of operable windows.
+
+    * These are assigned to panels in elevation by using the [Operable Windows tool tab](../drawing-elevations/operable). 
+    
+    * Operable windows are not reflected in estimates. Please use the details provided by your [Operable Windows Report](../output/reports#operable-windows) and refer to your vendor for pricing.
+
+
 ## Preconfigured Catalogs
 
 When first starting out with WinBidPro, you'll be asked to choose vendors your team specifies regularly. The ones you choose will pull preconfigured catalogs for these vendors in WinBidPro for your team.
@@ -34,10 +94,11 @@ If you notice that a system or its pricing has recently changed and needs to be 
 
 
 ## Custom Catalogs
-For more advanced WinBidPro users, and companies that build their own custom parts, WinBidPro has an extensive set of features to configure your own systems and catalogs. Once they're correctly configured, you can use them just like any of the preconfigured options.
+For more advanced WinBidPro users and companies that build their own custom parts, WinBidPro has an extensive set of features to configure your own systems and catalogs. Once they're correctly configured, you can use them just like the preconfigured ones.
 
 You can find more details in the [Custom Parts & Systems](/docs/16/custom-parts/) section.
 
 If there's something you need from a specific vendor that's not in a vendor's preconfigured list, these can be added by you on a per-job basis, or directly to your team's vendor catalog. See [Local & Global Edits](./config-levels) for more details.
 
 You can also create a completely new catalog for vendors that aren't preconfigured, or your companies' own fabrications by clicking `Create` in the top right corner of the `Manage Vendors` window, see image above.
+
