@@ -5,52 +5,68 @@ sidebar_position: 5
 
 <div class="app-img"><img src="/screenshots/configuration/glass-config.png"/></div>
 
-* `Description` - 
+* `Description` - Provide a name / brief description for this product for use in reports your product list.
 
-* `Show Label` - 
+* `Show Label` - Set the label text to show on glass when your layer settings have `Show Labels` on.
 
-* `Glass Type` - 
+* `Glass Type` - Options include:
 
-* `Price (per ft²)` - 
+    * `Annealed`
+    * `Heat Strengthened`
+    * `Laminated`
+    * `Spandrel`
+    * `Tempered`
+    * `Miscellaneous`
+    * `Heat Tempered`
 
-* `Fill Pattern` - 
+* `Price (per ft²)` - Set pricing per square foot. Costs are calculated based on glass area in elevations multiplied by this number.
 
-* `Supplier` - 
+* `Fill Pattern` - Optional setting to change the hatch pattern of this glass in elevation.
 
-* `Min. Block Area` - 
+* `Supplier` - Option to list a specific supplier.
 
-* `Display Color` - 
+* `Min. Block Area` - Option to set minimum block area. Reports will show when minimum glass area is not met.
+
+* `Display Color` - Optional setting to change the color of this glass in your elevations.
 
 ---
+
+* ☑ `Use Detailed Makeup` - Toggle simple or detailed make up. 
+
+    * `Simple Makeup` allows you to set an overall thickness, a lite thickness and a number of panes. 
+
+    * `Detailed Makeup` gives you more configurability, allowing you to add layers independently, and provides a preview of the glass makeup on the right.
 
 ## Simple Makeup
 
-* ☑ `Use Detailed Makeup` - 
+* `Overall Thickness` - The overall thickness of your glass unit.
 
-* `Overall Thickness` -
+* `Total Lite(s) Thickness` - The thickness of each lite of glass. 
 
-* `Total Lite(s) Thickness` - 
+    * This number is used along with your number of `Panes` and glass area to calculate the weight for labor estimates.
 
-* `Panes` - 
+* `Panes` - Number of glass lites in a unit, between 1 and 4.
 
 ## Detailed Makeup
 
-* `Generated Description` - 
+* `Generated Description` - Automatically generates a description based on the configured layers.
 
-### Lite 
+* `Add Insulating Layer` - Adds a new lite of glass with a spacer / insulating layer between.
 
-* `Thickness`
+* `Add Laminating Layer` - Adds a new lite of glass with a laminating interlayer between.
 
-* `Description`
+### Layers
 
-`Add Insulating Layer`
+Each layer will create a new tile with options to configure:
 
-`Add Laminating Layer`
+* `Thickness` - Specify a thickness for this layer. 
+
+* `Description` - Add a description for this layer.
 
 ---
 
-* `Cancel` / `Save`
+* `Cancel` / `Save` - Confirm the new glass product or cancel.
 
-* `Save to Global List`
+* `Save to Global List` - Save this glass product to your organizations' glass product list for use in other jobs.
 
-* `Print...`
+* `Print...` - Print the drawing of your detailed makeup preview.
