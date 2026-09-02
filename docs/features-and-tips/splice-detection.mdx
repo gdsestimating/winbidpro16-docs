@@ -3,19 +3,26 @@ title: Splice Detection
 sidebar_position: 4
 ---
 
-Elevations drawn with frames lengths longer than the stock length (minus clean up cuts) of a framing systems' configured parts will trigger a splice detection window to pop up.
+Required splices are automatically called out when an elevation has an extrusion that's longer than a part's stock length. 
+
+When this happens, you'll see the Splice Detection pop-up to help resolve it, and you'll have a [Job Alert](./job-alerts.mdx) until you add splices or change the elevation. 
 
 <div class="app-img"><img src="/screenshots/splice-detect.png"/></div>
 
-## Options
+## Splice Detection Options
 
-* `Automatically Apply Splices At Stock Lengths` - Quicker estimating. Allow the app to automatically apply splices where they are needed. These splices can be adjusted or deleted in the [Splice tool tab](../drawing-elevations/splices) once they are applied.
+* `Automatically Apply Splices At Stock Lengths (Quicker Estimating)` - Click to automatically add splices to this elevation. 
 
-* `I Will Add Splices Later` - Better Accuracy. Configure your own splices later using the [Splice tool tab](../drawing-elevations/splices). 
+* `I Will Add Splices Later (Better Accuracy)` - Click to exit this window and add your splices later.
 
-    * Until these are resolved, [Job Alerts](./job-alerts) will appear for all required splices.
+In either case, you can add, edit, or delete any splices in this elevation using the [Splice](../drawing-elevations/splices) tool tab.
 
-## Settings
-* ☑ `Remember this choice for this Job` - Toggle whether this choice applies to just this elevation or all elevation in this job.
+### Splice Detection Settings
 
-* ☑ `Remember this choice for new Jobs` - Toggle whether this choice applies to just this job or all jobs moving forward.
+Using these setting, you can skip the detection pop-up and automatically run whichever option you click this time.
+
+* ☑ `Remember this choice for this Job` - Check this box to remember your choice for this job only.
+
+* ☑ `Remember this choice for new Jobs` - Check this box to remember your choice for all new jobs moving forward.
+
+You can change these at any time by going to `Settings`>`Editor Settings` in the main menu.
