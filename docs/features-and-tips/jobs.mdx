@@ -1,8 +1,78 @@
 ---
-title: Core Concepts - Jobs and Elevations
-sidebar_position: 1
+title: Core Concepts 1 - Jobs and Elevations
+sidebar_position: 0
 ---
 
-Elevations are your glazed frames, openings, entrances, borrowed lites, storefront, curtain wall, etc.
+:::info
+    This series of articles covers just the core concepts in WinBidPro. You can find more information on how to do the things mentioned here in the other sections of the documentation.
+:::
 
-Once an Elevation is built out with a configured Framing System applied, reports will start to show the parts and pieces needed to achieve that elevation.
+:::info
+    This series uses some terms that have specific meanings in WinBidPro that don't perfectly match how they're used out in the field. If something is typed `like this`, we're talking about the WinBidPro definition, specifically.
+:::
+
+---
+
+## Big Picture
+
+Estimates in WinBidPro are split up into **`Jobs`**. 
+
+A `job` represents a set of glazed openings using framing systems (storefront, curtain wall, window wall, punched entrances) in an architectural project, parts and costs that go into those openings, and settings / special considerations like markups and labor.
+
+WinBidPro does this by referencing **`Catalogs`** -- collections of parts, assemblies, costs, and installation / ordering logic -- and how they apply to **`Elevations`** -- CAD versions of glazed openings drawn in WinBidPro. 
+
+In short - `Catalogs` give a `job` real product data to work with, while `Elevations` give a `job` a way to estimate a specific projects' cost. 
+
+In this article, we'll cover `jobs` and `elevations` in more detail. We'll talk more about `Catalogs` in the next article - [Core Concepts 2 - Catalogs & Parts](./catalogs.mdx).
+
+## Jobs
+
+`Jobs` are stored in the cloud and shared between users in your organization. They contain:
+
+* `Elevations`
+* Copies of `Catalog` items like parts and framing systems
+* Any settings shared by your organization, which are used as defaults for `jobs` until you change them. 
+
+A `job` will use these to calculate your parts lists, cut list, costs, etc. These calcs are kept up to date as you change things in the job, and get summarized / optimized in the `Reports` section of in the main menu. The bottom half of the `Reports` menu (in green), is devoted to print-ready versions of these summaries for ordering and estimates.
+
+A `job` can also generate shop drawings of the `elevations` you draw alongside detail drawings for each framing system, if those details are provided. You can find shop drawing options and outputs in the `Drawings` section of the main menu.
+
+
+### Important Considerations
+
+* A `job` in WinBidPro is limited to a single vendor to avoid configuration issues like mixing and matching parts between vendors, or similar / shared part names. 
+
+    * If you need separate vendors for different scopes in single project, create a new `job` for each scope.
+
+* `Jobs` create local copies of the parts and systems you see in `Catalogs` as you apply them to elevations.
+
+    * We go into depth on the difference between `job` copies, and global versions found in catalogs, in [Core Concepts 3 - Local and Global Edits](./config-levels.mdx).
+
+
+## Elevations
+
+<div class="mini-img"><img src="/screenshots/interface/elevation-view.png"/></div>
+
+
+
+
+`Elevations` get added to jobs for each framed opening in your scope.
+
+You are required to assign a framing system to `Elevations`. Once the `elevation` has enough basic details to calculate parts, it will automatically add those parts to the reports. The reports will update as you refine the the `elevation`.
+
+<div class="mini-img"><img src="/screenshots/tool-tabs/editor-layout-1.png"/></div>
+
+Drawing `elevations` is how we refer to laying them out. You do this by using the `tool tabs` at the bottom of WinBidPro to add more rules, settings and conditions until each elevation looks right.
+
+
+
+* The [Drawing Elevations](../drawing-elevations) section goes in depth on `Elevations` and how to draw them in WinBidPro.
+
+`Elevations` can also have `Labor` applied to them to calculate labor costs - see [Labor](../features-and-tips/labor) for more details.
+
+
+### Important Considerations
+
+* `Elevations` are intended to be a single framed opening. Attempting to do multiple framed openings in a single `Elevation` will result in incorrect estimates and should only be done for visual reference.
+
+    * If a single typical elevation in a drawing set has a structural gap / brake metal between two framed openings, make them two separate `elevations` in WinBidPro.
