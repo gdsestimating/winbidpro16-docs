@@ -1,0 +1,37 @@
+---
+title: Core Concepts
+sidebar_position: 1
+---
+
+:::info
+    This series of articles covers just the core concepts in WinBidPro. You can find more information on how to do the things mentioned here in the other sections of the documentation.
+:::
+
+:::info
+    The Core Concepts articles use some terms that have a specific meaning in WinBidPro. That definition may not perfectly match how they're used out in the field. 
+    
+    If something is typed `like this`, we're talking about the WinBidPro definition, specifically.
+:::
+
+## Big Picture
+
+Estimates in WinBidPro are split up into **`Jobs`**. 
+
+A `job` represents a set of glazed openings that use framing systems (storefront, curtain wall, punched entrances, etc) in a project, the parts that go into those openings, and any settings / adjustments like markups and labor. WinBidPro does this by building **`Elevations`** and applying framing systems to them from **`Catalogs`**.
+
+* `Elevations` - The project's glazed openings recreated in WinBidPro. 
+    * These are built from the drawing set, but use actual part profiles and assemblies from the `catalog`.
+
+* `Catalogs` - Collections of parts, assemblies, costs, and installation / ordering logic. 
+
+    * These use the `Elevations` to build out parts lists and cost estimates in real time.
+
+Basically, `catalogs` give a `job` product info, while `elevations` give the `job` project info.
+
+## Articles
+
+    * [Part 1](./jobs.mdx) covers `Jobs`, `Elevations`, and how they build your outputs.
+
+    * [Part 2](./catalogs) covers `Catalogs` and `Part` / `Framing System` configuration.
+
+    * [Part 3](./config-levels) covers changing parts and settings works at the `Job Level` compared to the `Team Level`. 

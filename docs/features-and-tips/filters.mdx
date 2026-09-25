@@ -3,7 +3,7 @@ title: Grouping & Filtering Lists
 sidebar_position: 3
 ---
 
-Part lists and summaries play a major role in your estimates, but these lists can be lengthy. You can use groups and filters to help organize them.
+Part lists and summaries play a major role in your estimates, but these lists can be lengthy. You can use groups and filters to help organize them, and even set multiple groups and filters at the same time for a highly customized view.
 
 * **Groups** break your list up into sections by columns and their values. 
 
@@ -11,15 +11,15 @@ Part lists and summaries play a major role in your estimates, but these lists ca
 
 * **Quick Filters** are simplified filters used in part selection. These only show up in a few specific places -- for example, selecting a door frame for your entrance.
 
-You can set multiple groups and filters at the same time for a highly customized view.
+
 
 ## Groups
 
-To set a group, drag the column header into the group area at the top of the list. 
+To set a group, drag a column header into the group area at the top of the list. 
 
-Once a group is active, it'll break your list up into sections based on the values found in its column. These sections can be expanded or collapsed by pressing the `▲` / `▼` on the far left of each section header.
+Once a group is active, it'll break your list up into sections based on the unique values in this column. These sections can be expanded or collapsed by pressing the `▲` / `▼` on the far left of each section header.
 
-If a list has active groups, you'll see the column name in light blue in the group area. You can change the sorting for each group by clicking the center of the blue box. You can remove this group setting by clicking the `X` that appears when you hover over it.
+If a list window has active groups, you'll see the column name in light blue in the group area. You can cycle through sorting options by clicking the center of the blue box. You can remove this grouping by clicking the `X` that appears when you hover over the blue box.
 
 <div class="app-img"><img src="/screenshots/interface/list-grouping.gif"/></div>
 
@@ -27,18 +27,18 @@ If a list has active groups, you'll see the column name in light blue in the gro
 
 To set a filter for a column, click the <img src="/screenshots/filter-icon.png"/> filter icon in the column header. 
 
-As you adjust the filter settings, the list will update to preview your settings. You can confirm these changes by clicking the `Filter` button, or remove them with the `Clear Filter` button. 
+As you adjust the filter settings, the list will update to show a preview. You can confirm the settings by clicking the `Filter` button, or remove them with the `Clear Filter` button. 
 
-Filtering options are broken out into value filters and conditional filters -- see the sections below for more details. If needed, you can set both kinds of filters at the same time.
+Filtering options are broken out into value filters and conditional filters -- see the sections below for more details.
 
 <br clear="right"/>
 
 ### Filter by Value 
-The top portion of the filter menu contains your value filters. This section lists each unique value in this column and lets you individually turn them on and off. If you need to filter by partial values, see below for conditional filters.
+The top portion of the filter sub-menu is your value filter. This lists each unique value and lets you turn each of them on or off. If you need to filter by partial values, see below for conditional filters.
 
 * ☑ `Select All` - When checked, no values are hidden.
 
-    * If values are checked, the filter will default to this even when unchecked.
+    * If no values are checked, the filter will default to this even if unchecked.
 
 * Below `Select All` is a list of values set in this column, each with a ☑ checkbox. If one or more values are checked, only line items with those values will be visible.
 
@@ -53,35 +53,36 @@ The top portion of the filter menu contains your value filters. This section lis
 :::
 
 ### Filter by Condition
-Below the value filters, you'll see the label `Show rows with value that` -- this is the conditional filter section.
+Below the value filters, you'll see `Show rows with value that` -- this is the conditional filter section.
 
-Conditional filters are filters based on rules rather than specific values. This is helpful when you need to filter line items by a shared trait or partial value, even when those values don't match each other. 
-
+Conditional filters are based on rules instead of values. This can help if you need to filter by a shared trait or part of a value, even when those values don't match each other. 
 
 
 <img align="right" src="/screenshots/filter-conditions.png"/>
 
-These rules are set using operators and values - see **Setting Conditions** below.
+These rules are set using operators and inputs - see **Setting Conditions** below.
 
-You can set up to two conditions at once, and how those conditions apply using the `And` / `Or` option - see **Pairing Conditions** below.
+You can set up to two conditions at once. You can also set how those conditions relate to each other using the `And` / `Or` option - see **Pairing Conditions** below.
 
 <br clear="right"/>
 
 #### Setting Conditions
-Conditions are set by pairing an operator and a value. 
+Conditions are set by pairing an operator and an input. 
 
-* Operators are a set of options that tell the filter what to do when it finds your typed condition value.
+* Operators are a rule that tells the filter what to do when it finds the input.
 
-    * Some options like `Is empty` are a complete condition in themselves and don't need a value. When you select these operators, the value box will be locked. 
+    * Some operators like `Is empty` are a complete condition and don't need an input. When you pick these operators, the input box will be locked. 
 
-* Values can be anything you type - this is what the filter looks for in your column entries.
+* Inputs can be anything you type - this is what the filter looks for.
 
-    * <img src="/screenshots/case-match.png"/> `Match Case` - By default, case matching is off for filters. You'll see this toggle for certain columns like `Elevation Mark` where upper and lower case can be particularly important. 
+    * <img src="/screenshots/case-match.png"/> `Match Case` - By default, case matching is off for filters. You'll see this toggle for some columns like `Elevation Mark`, where upper and lower case can be especially important. 
 
 :::info
     **Example** - I want to set a conditional filter for the `Part Type` column in my parts list. 
     
-    If I set the first line of my condition to `Contains` and type `e` in the second line, my parts list will be filtered to include lines where with part types like `Screws` and `End Dam`. The list won't include lines with the part type `Anchors` because it doesn't contain the letter e.
+    If I set the first line of my condition to `Contains` and type `e` in the second line, my parts list will be filtered to include part types like `Screws` and `End Dam`. 
+    
+    The filter will hide the part type `Anchors` because it doesn't contain the letter e.
 :::
 
 #### Pairing Conditions

@@ -60,7 +60,7 @@ Some cleanup or adjustments may be required after migration. Many customers use 
 
 :::tip
 
-Ready to begin? Follow the step-by-step instructions in the [Catalog Migration Guide](/docs/v16/basics/upgrading/v15-catalog-migration).
+Ready to begin? Follow the step-by-step instructions in the [Catalog Migration Guide](./v15-catalog-migration).
 
 :::
 
@@ -74,7 +74,7 @@ You can begin learning v16 right away using the resources below.
 |---|---|
 | YouTube Channel | [youtube.com/@gdsestimating6835](https://www.youtube.com/@gdsestimating6835) |
 | Structured v16 Training Videos | [gdsestimating.com/v16-training-videos](https://www.gdsestimating.com/v16-training-videos) |
-| Documentation | [docs.winbidpro.com](https://docs.winbidpro.com/docs/intro/) |
+| Documentation | [docs.winbidpro.com](https://docs.winbidpro.com/) |
 
 Live training sessions are also available if your team would prefer guided onboarding. [Contact us](https://www.gdsestimating.com/support) to schedule.
 
@@ -98,7 +98,7 @@ This approach avoids disruption to active projects and gives everyone time to ge
 :::info[Next Steps]
 
 - **Download v16** — [gdsestimating.com/downloads](https://www.gdsestimating.com/downloads)
-- **Migrate your catalogs** — follow the [Catalog Migration Guide](/docs/v16/basics/upgrading/v15-catalog-migration)
+- **Migrate your catalogs** — follow the [Catalog Migration Guide](./v15-catalog-migration)
 - **Schedule a live training session** — [contact us](https://www.gdsestimating.com/support)
 - **Discuss your transition timeline** — [contact us](https://www.gdsestimating.com/support)
 

@@ -73,7 +73,7 @@ You can begin learning v16 right away using the resources below.
 |---|---|
 | YouTube Channel | [youtube.com/@gdsestimating6835](https://www.youtube.com/@gdsestimating6835) |
 | Structured v16 Training Videos | [gdsestimating.com/v16-training-videos](https://www.gdsestimating.com/v16-training-videos) |
-| Documentation | [docs.winbidpro.com](https://docs.winbidpro.com/docs/intro/) |
+| Documentation | [docs.winbidpro.com](https://docs.winbidpro.com/) |
 
 Live training sessions are also available if your team would prefer guided onboarding. [Contact us](https://www.gdsestimating.com/support) to schedule.
 

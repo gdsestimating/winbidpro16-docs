@@ -4,29 +4,30 @@ sidebar_position: 2
 ---
 Add fixed height dimensions, fixed width dimensions or bulkheads to individual panels. 
 
+This tab lists all panel adjustments in this elevation with buttons to edit or delete them. If adjustments haven't been added, the list will show `No Panel Adjustments` instead.
+
 <div class="app-img"><img src="/screenshots/tool-tabs/editor-adjust-3.png"/></div>
-
-The Adjust Panels Tool Tab will show a list of adjustments made in your current elevation. You can use this list to quickly review, edit, or delete existing adjustments.
-
-If adjustments haven't been made to any panels in this elevation, the list will show `No Panel Adjustments`.
 
 ## Adding Adjustments
 
-Click the `Add` button to create a new panel adjustment. 
-
-Your tab will switch to a new view where you can select panels and create new adjustments.
-
 <div class="app-img"><img src="/screenshots/tool-tabs/editor-adjust-2.png"/></div>
 
-### Types and Options
+* `Add Width` - Select panels and add a fixed `Width` to them.
 
-* `Width` - Limit selected panels to a specified `Width`.
+* `Add Height` - Select panels and add a fixed `Height` to them. This is measured from the bottom of the panel.
+* `Add Bulkhead` - Select panels and raise their sill by the `Bulkhead Height`.
 
-* `Height` - Limit selected panels to a specified `Height`, measured from the bottom of the panel.
-* `Bulkhead` - Raise the sill of selected panels by a specified `Bulkhead Height`.
+* `Insert Panel` - Select a vertical frame to split and click `Insert Panel` to confirm.
+* `Remove Panel` - Select a panel to remove and click `Remove Panel` to confirm.
+
+:::tip
+    Though the result is the same, `Insert Panel` / `Remove Panel` gives you more control over changes to panel layouts than changing the number of panels in the `Elevation` tool tab.
+
+    This can be especially helpful when you need to adjust your panels after setting other elevation rules. 
+:::
 
 ### Confirm / Return
 
-Click `Add` to confirm your settings and apply them to the elevation.
+Click `Add` to confirm your setting.
 
-Click `Back` to return to the list of all panel adjustments.
+Click `Back` to return to the list of all adjustments.

@@ -4,7 +4,7 @@ sidebar_position: 1
 ---
 
 :::danger
-    Making changes to existing parts will effect your estimates based on how and where they're used in your jobs.
+    Making changes to existing parts will effect your estimates based on how and where they're used in your jobs and referenced in framing systems.
 
     **Carefully consider any changes you make before saving them!**
 :::
@@ -17,9 +17,9 @@ The part catalog will include all parts available under a specific vendor.
 Using this list, you can quickly change specific part properties for existing parts by double-clicking it, then typing or selecting a new value.
 
 :::tip
-    The part list will include all parts of all types for a vendor, making them the longest list of any catalog.
+    The part list will include all parts of all types for a vendor, making it the longest list of any catalog.
     
-    If you're looking for something specific, be sure to use the search feature, or organize and limit the list using [List Groups & Filters](../features-and-tips/filters).
+    If you're looking for something specific, be sure to use the search feature or organize the list using [List Groups & Filters](../features-and-tips/filters).
 :::
 
 ### Options
@@ -38,35 +38,39 @@ Using this list, you can quickly change specific part properties for existing pa
     
     * See [Exporting CSV / Spreadsheets](../output/spreadsheets) for more details.
 
-* `Change Multipliers...` - Apply a price multiplier to all currently visible parts at once.
+* `Change Multipliers...` - Apply a price multiplier to all currently visible parts at once. 
 
-* `Sync Parts...` - This will add new parts and make updates to existing parts based on changes from the GDS preconfigured vendor catalogs.
+    * If filters are applied, any hidden parts won't be updated by this option.
+    
+    * Multipliers can also be set individually by double-clicking the cell.
+
+* `Sync Parts...` - Updates your parts list to the latest version published by GDS.
  
 :::warning
-    While syncing parts with the GDS preconfigured catalogs will not automatically remove your custom parts, if they share a part number with a preconfigured part that's been added since the last sync, your new part may be overwritten. 
+    Syncing parts with the GDS preconfigured catalogs will not remove your custom parts. If a custom part they shares a part number with a preconfigured part that's been added since the last sync, your new part may be overwritten. 
     
     Custom values you've set on existing parts will be overwritten, except for certain values like `Catalog Code` and `Catalog Vendor`.
 :::
 
 ## Configuring a Part
 
-If you add a new part to the catalog, or edit an existing one, you'll open up the part configuration window. This is an expanded and focused view of the parts catalog and its properties.
+If you add a new part to the catalog, or edit an existing one, you'll open up the part configuration window. This is an expanded and focused view of the parts catalog and its columns.
 
 <div class="app-img"><img src="/screenshots/configuration/parts-config.png"/></div>
 
-* `Part Number` - A unique part identifier.
+* `Part Number` - A unique part identifier. This should match the vendor's part number.
 
 * `Description` - A descriptive name for the part.
 
-* `Part Type` - Some part types will only show up in specific contexts. 
+* `Part Type` - A category for parts. 
 
-    * Ex: The `Door Frame` type will only show up in reports and options related to entrances and the `Final Parts` list.
+    * Some part types will only show up in specific windows. Ex: The `Door Frame` type will only show up in windows related to entrances and the `Final Parts` list.
 
 * `Handling` - How pricing is generated for this part. Options include:
 
     * `Count` - Used for parts with pricing based on quantity.
 
-    * Measure - Used for parts with pricing based on length. Measured parts can be be Optimized or Not Optimized.
+    * `Measure` - Used for parts with pricing based on lengths. Measured parts can be Optimized or Not Optimized.
     
         * `Measure (Not Optimized)` - Covers most measured parts.
 
@@ -78,25 +82,25 @@ If you add a new part to the catalog, or edit an existing one, you'll open up th
         
             * ☑ `Allow breaks w/o full splice` - Toggle whether breaks in cut lengths need a splice condition.
 
-            * ☑ `Do not apply finish clean up cuts` - Toggle clean up cuts included in cut optimization.
+            * ☑ `Do not apply finish clean up cuts` - Toggle whether clean up cuts are included in cut optimization.
 
-* `Package Quantity` - Tracks the amount of parts included in a standard package for pricing estimates.
+* `Package Quantity` - Tracks the amount of parts included in a standard pack.
 
 * `Weight` - Measured in pounds. Tracks the weight of a part for labor cost estimates. 
     * See [Labor Settings](../features-and-tips/labor#labor-settings) for more details.
 
-* `Catalog Code` / `Catalog Page` - Reference codes / page numbers from the vendor's price books and / or part catalogs.
+* `Catalog Code` / `Catalog Page` - Reference codes / page numbers from the vendor's price books / part catalogs.
 
 :::tip
-    `Catalog Code` and `Catalog Page` are only used for easy reference to vendor catalogs. If you want to set your own internal reference numbers, it won't effect your counts or estimates.
+    `Catalog Code` and `Catalog Page` are used only for reference to vendor catalogs. If you want to set your own internal reference numbers, it won't effect your counts or estimates.
 :::
 
 ### Pricing
 
-* `Multiplier` - A multiplier applied to the part pricing.
+* `Multiplier` - A multiplier applied to the part counts.
 
 * `Mill` - Option to add additional cost for milled parts.
 
-* Per Finish Pricing - Parts have the option to set pricing for each option in the vendor `Finish` catalog. 
+* Per Finish Pricing - Parts have the option to set pricing for each option under the vendor's `Finish` catalog. 
 
     * If a part doesn't have different finish options, use the `No Finish` box for pricing instead.

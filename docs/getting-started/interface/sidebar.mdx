@@ -1,75 +1,82 @@
 ---
-title: Sidebar Menus
+title: Sidebars
 sidebar_position: 4
 ---
 
 ### Job Explorer<img align="right" src="/screenshots/interface/job-explorer.png"/>
-A summary of elements loaded or built out in the current job.
 
-* All [Elevations](/docs/16/drawing-elevations/) in the current job are listed here.
+A summary of your current job. 
 
-* Expand `Data Tables` for list of loaded:
-    * Framing Systems
-    * Glass Products
-    * Labor Rulesets
+* `Job Explorer` includes:
 
-* Here, you can right-click the job name for quick-access list of job options.
+    * All elevations in the job.
+
+    * `Data Tables` - List of local copies of systems, glass and labor loaded into your job.
+
+        * See [Local and Global Edits](../concepts/config-levels) to learn how these differ from the catalog versions.
+
+* You can right-click each line in the job explorer for more options.
+
 
 
 <br clear="right"/>
 
 ### Reports Explorer<img align="right" src="/screenshots/interface/reports-explorer.png"/>
 
-A quick-access menu to all the reports found in the `Reports` toolbar menu.
+A configurable menu for quick-access to `Reports`. 
+
+* <img src="/screenshots/interface/report-gear.png"/> `Settings` - Opens [`All Reports and Settings`](../../output/reports#all-reports--settings) window.
 
 * `Search` - Find specific reports in the list.
 
-* Use the pin icon next to each report to build out a custom quick-list.
+* <img src="/screenshots/interface/report-pin.png"/> `Pin` - Pin / unpin this report to the top of the list.
 
-* Use the gear icon to change options for printed reports and labels.
+
 
 
 <br clear="right"/>
 
 ### Elevation Totals<img align="right" src="/screenshots/interface/elevation-totals.png"/>
 
-Provides a live update of counts, cuts, joints, areas, perimeter, and labor for the current selected elevation. 
+A list of estimate totals for the current elevation that updates as you make changes. 
+
+This shows running totals of:
+* Counts & Cuts 
+* Measurements
+* Joints
+* Labor
 
 <br clear="right"/>
 
 ## Layer Settings<img align="right" src="/screenshots/interface/layer-settings.png"/>
 
-Manage visibility settings and colors for all text, lines, and hatches in the elevation view.
+Configure graphic settings for your elevations, broken out into sections like `Frame` or `Glass`.
 
-* `Configuration` - Use this section to build out, and switch between different sets of settings.
+* `Configuration` - Use this section to save custom presets and switch between them.
 
-* `Search` - Find a specific element.
+* `Search` - Find a specific layer setting.
 
-* Each piece of an elevation is broken out into sections like `Frame` or `Glass`
+* For most linework you can:
 
-* For most drawn linework you can:
-
-    * Toggle between `Visible`, `Hidden`, or `Excluded from Export`. 
+    * Switch between `Visible`, `Hidden`, or `Excluded from Export`. 
 
     * Switch the default layer color by clicking the color swatch next to the toggle options.
 
-* For panel elements, like `Glass` and `Operable Windows` you can also change the fill pattern between a handful of presets.
+    * You can also change the fill pattern for panel elements, like `Glass` and `Operable Windows`.
 
-* `Dimensions` - Dimensions share their visibility settings and color but include options to toggle on or off specific types of dimensions.
+* `Dimensions` - Configure visibility and color for all dimensions, and toggle on / off specific types of dimensions.
     
-    * This is also where you set your units for dimensions.
+    * This is also where you set your dimension styles, scale, format, and orientation.
 
-    * Some dimensions, like `Arch Radius`, include options to scale the dimension.
+* `Displayed Text` - Change the format of non-dimension annotations and dimension subtext for things like rough openings.
 
-* `Displayed Text` - Change the formatting of dimension subtext for things like rough openings, and for other non-dimension text.
+* `Selections` - Change how things look when selected or hovered over.
 
-* `Selections` - Change how something looks when it's selected or hovered over.
+* `Misc` - Change the background color of the elevation view.
 
-* `Misc` - Allows you to change the background color of the elevation view.
+* `Editor Settings` - Open the editor settings menu. Also can be found under `Settings`  in the main menu.
 
-* `Editor Settings` - Opens the editor settings menu. Also can be found under the `Settings` toolbar menu.
-
-* `Reset to Default` - Reset all setting back to WinBidPro defaults.
+* `Reset to Default` - Reset all settings back to WinBidPro defaults.
 
 
 <br clear="right"/>

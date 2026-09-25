@@ -4,7 +4,7 @@ sidebar_position: 3
 ---
 
 :::info
-    This section covers how to create and edit elevations in an active job. If you're new to WinBidPro, we recommend reading through the Core Concepts pages first.
+    This section covers how to create and edit elevations in an active job. If you're new to WinBidPro, we recommend reading through the [Basic Workflow](../getting-started/basic-workflow) page first.
 :::
 
 ---
@@ -17,25 +17,26 @@ After you make new job, you'll get a prompt to make your first elevation. You ca
 
 While you're in a job, more elevations can be added by:
 
-* Clicking `Job` in the toolbar and selecting `New Elevation`
+* Clicking `Job` > `New Elevation` in the main menu.
 
 * Pressing `Ctrl`+`N`
 * Right-clicking in the `Job Explorer` and selecting `Add New Elevation`
     * Existing elevations can also be copied as a starting point for new elevations by right-clicking them in the `Job Explorer` and selecting `Copy Elevation`.
 
-The new elevation window will appear with some options.
+### New Elevation Options
 
 <div class="app-img"><img src="/screenshots/new-elevation-window.png"/></div>
 
-* `Elevation Type` - A choice of Standard Elevation, Punched Entrance or Entrance w/ Transom
+* `Elevation Type` - A choice of Standard Elevation, Punched Entrance or Entrance w/ Transom.
 
-    * `Standard Elevation` - A glazed opening with options to add entrances, borrowed lites, etc
-    * `Punched Entrance` - A punched opening meant for a framed door without transoms or sidelites
-    * `Entrance w/ Transom` - A punched opening meant for a framed door and transom but without sidelites
-* `Mark` - A unique mark for the elevation -- Also known as a tag or code
-* `Description` - An optional description of the elevation
-* `Framing System` - The configured framing system to use with this elevation
-* `Finish` - The finish applied to your framing system
+    * `Standard Elevation` - A glazed opening with options to add entrances, borrowed lites, etc. This covers most use cases.
+    * `Punched Entrance` - A punched opening meant for a framed door without transoms or sidelites.
+    * `Entrance w/ Transom` - A punched opening meant for a framed door and transom but without sidelites.
+* `Mark` - A unique mark for the elevation -- Also known as a tag or code.
+    * You'll usually want this to match the system's tag in the drawing set.
+* `Description` - An optional description of the elevation.
+* `Framing System` - The framing system to use with this elevation.
+* `Finish` - The finish applied to your framing system. Defaults to the finish selected when you started the job.
 * `Labor Ruleset` - The rules for estimating labor.
 
 
@@ -46,19 +47,17 @@ At the bottom of the screen you'll see your tool tabs. Each tab has different to
 
 To start, use the `Elevation` tab to assign a minimum of one `Panel`, an `Original Height` and an `Original Width` to draw a preview of your elevation. 
 
-Once a preview is drawn, selecting system frames and glass panels becomes available for other tool tabs like `Horizontals` and `Entrances`.
+Once a preview is drawn, the other tool tabs will be unlocked.
 
-### Tool Tabs
+### Tool Tab Descriptions
 
-Tool tabs can be found on the bottom of the main WinBidPro window and are the main way to build out elevations. Each tab focuses on a specific component of an Elevation.
+You can find a brief description of each tool tab here. Click the corresponding page on the left for more details.
 
-You can find a brief description of each tool tab here. Click each topic's page on the left for more details.
+* `Elevation Tab` - Set core details for the current elevation. Until these are set, the other tabs will not be available.
 
-* `Elevation Tab` - Set height, width, number of panels, and other core details for the current elevation. Until these are set, the other tabs will not be available.
+* `Adjust Panels Tab` - Add fixed height and width rules or a bulkhead (knee wall) to specific panels.
 
-* `Adjust Panels Tab` - Add fixed height and width rules, or a bulkhead, to specific panels.
-
-* `Horizontals Tab` - Manage horizontal framing and divide panels.
+* `Horizontals Tab` - Manage add horizontal framing to your panels.
 
 * `Entrances Tab` - Manage door frames and door leafs.
 
@@ -72,7 +71,7 @@ You can find a brief description of each tool tab here. Click each topic's page 
 
 * `Alternate Tab` - Assign alternate parts to framing assemblies.
 
-* `Exclude Tab` - Exclude frame segments and associated parts from reports.
+* `Exclude Tab` - Exclude specific frame segments and their parts from reports.
 
 * `Glass Tab` - Assign glass products to panels.
 
@@ -82,22 +81,8 @@ You can find a brief description of each tool tab here. Click each topic's page 
 
 * `Annotations Tab` - Add annotation text and leaders to elevations and drawings.
 
-* `Joints Tab` - Change visibility and highlighting for different types of joints. Joint conditions are specified in the framing system configuration.
+* `Joints Tab` - Joint are automatically assigned by the framing system configuration. Use this tab to review the assignments.
+
+    * See [Joint Configuration](../custom-parts/framing-systems/joints) for details on joint assignment.
 
 * `Labor Tab` - Assign labor pricing rulesets and settings.
-
-### Tips
-
-:::info
-    Any change to an elevation using tool tabs is non-destructive. 
-    
-    This means you can add, edit, or delete a tool tab option without breaking the elevation or other tab tool options. If two configurations are conflicting, you can delete or edit one of the two configurations until you get something that works.
-    
-    No need to start from scratch! 
-:::
-
-:::warning
-    Any edits to catalog entries from the tool tabs will create a **copy** of the original and **need to be synced** to be used on other jobs.
-
-    See [Local & Global Edits](../features-and-tips/config-levels) for more information.
-:::

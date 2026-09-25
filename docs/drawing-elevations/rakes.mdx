@@ -5,11 +5,7 @@ sidebar_position: 7
 
 Create angled panel shapes by drawing a raked boundary across the frame.
 
-<div class="app-img"><img src="/screenshots/tool-tabs/editor-rake-1.png"/></div>
-
-The Rakes Tool Tab will show a list of rakes applied in your current elevation. You can use this list to quickly review, edit, or delete existing rakes.
-
-If a rake hasn't been applied to any panels in this elevation, the list will show `No Existing Rakes`.
+This tab lists all applied rakes in this elevation with buttons to edit or delete them. If rakes haven't been added, the list will show `No Existing Rakes` instead.
 
 :::warning
     At the moment, the Rake tool allows you to add multi-point rakes or 'Rake Chains' but this can cause unreliable results as rakes start to get more complicated, especially when dealing with slanted verticals.
@@ -17,9 +13,13 @@ If a rake hasn't been applied to any panels in this elevation, the list will sho
     If this is a high priority item for you or your business, please *[Click Here](https://feedback.winbidpro.com/suggestions/359068/sloped-side-trapezoids)*  to up-vote this feature.
 :::
 
+<div class="app-img"><img src="/screenshots/tool-tabs/editor-rake-1.png"/></div>
+
+
+
 ## Rake Drop
 
-You can find an option to set a Rake Drop in the toolbar under `Settings`, `Team Settings`. This will add extra length to cut list items that are raked.
+You can find an option to set a custom Rake Drop in `Settings` > `Team Settings`. This lets you customize the drop length added to your cuts at raked conditions.
 
 :::warning
     Rake Drop values **will effect your entire team**. Once you set this value, it will apply to all new jobs **after the `Rake Drop` is set**. 
@@ -32,30 +32,31 @@ Click the `Add` button to create a new rake.
 Your tab will switch to a new view where you can select points on the edges of frame segments to define the rake.
 
 :::tip
-    In WinBidPro, Rakes are made by subtracting from the overall elevation. 
+    In WinBidPro, Rakes are made by subtracting from the overall elevation.
     
-    Make sure you set the `Overall Height` & `Overall Width` in the `Elevation` Tool Tab according to the tallest and widest dimensions for raked systems.
+    Make sure you set the `Original Height` & `Original Width` in the `Elevation` tool tab according to the tallest and widest dimensions for raked systems.
 :::
 
 
 <div class="app-img"><img src="/screenshots/tool-tabs/editor-rake.gif"/></div>
 
+:::tip
+    The Rake tool uses point-snapping to automatically place your mouse at end points and mid points of extrusions as you get close to them.
+
+    You can temporarily disable this by holding `Ctrl` while you're placing points.
+:::
 
 ### Process
 
 1. Click `Add` to start a new rake
 
 2. Click two or more points on the elevation to create a rake line.
-    * By default, the Rake tool will remove the portion of the elevation above the rake line. To remove the bottom portion, hit `Esc` after selecting your points to manually set top or bottom removal.
+    * By default, the Rake tool will remove the portion above the rake line. To remove the bottom portion, hit `Esc` after selecting your points to manually select top or bottom removal.
 
-        * In some complex cases, the rake tool with automatically ask you to confirm top or bottom removal. 
+        * In some complex cases, the rake tool with ask you to confirm top or bottom removal. 
 3. If needed, adjust each point in the Tool Tab by changing the values of `X` (horizontal position) and `Y` (vertical position).
 
-:::tip
-    The Rake tool uses point-snapping to automatically place your mouse at end points and mid points of frame segments as you get close to them.
 
-    You can temporarily disable this by holding `Ctrl` while you're placing points.
-:::
 
 ### Confirm / Return
 

@@ -7,7 +7,7 @@ sidebar_position: 3
 
 GDS has an internal tool for migrating v15 Vendor Catalogs into v16. This page walks you through how to prepare and send your catalog files so we can import them into your v16 account.
 
-For general information about the v15 to v16 transition, see the [Upgrade FAQ](/docs/v16/basics/upgrading/upgrading-from-v15).
+For general information about the v15 to v16 transition, see the [Upgrade FAQ](./upgrading-from-v15).
 
 :::warning[Before you begin]
 

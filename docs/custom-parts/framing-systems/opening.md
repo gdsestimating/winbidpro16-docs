@@ -4,44 +4,46 @@ sidebar_position: 5
 ---
 
 :::info
-    `Adapters` here refer to operable window adapters (vents) and exist to fill the need to track operable window parts.
-    `Glass Adapters` are more completely handled in the `Glazing Options` tool tab. 
+    `Adapters` here refer to operable window adapters. Glass adapters are better handled in the [Glazing Options](./glazing) tab. 
+:::
+
+:::info
+    This article uses the term `opening` to refer to areas surrounded by frame assemblies, similar to glass lites or panels.
 :::
 
 ---
 
-A tab added to handle and configure stop and vent adapters options that can be applied automatically or manually to appropriate openings.
+`Opening Options` are different combinations of `Stops` / `Operable Window Adapters` applied to the perimeter of your openings. Once these options are built out, you can apply them using the [Stop/Adapter tool tab](../../drawing-elevations/stopadapter).
 
 ## Components
 
-This window has dedicated views for `Stops` and `Operable Window Assemblies` components. These are the same as the ones in the `Components` tab and updating either of these will update both.
+This window has dedicated views on the left for `Stops` and `Operable Window Adapters` assemblies. These are the same ones listed in the `Components` tab, and updating in either spot will update both.
 
 * See [Working with Components](../components) for more details on how to configure these assembly components.
 
-
-##  Adding New Option
+##  Adding New Opening Option
 
 <div class="app-img"><img src="/screenshots/configuration/config-frame-openings.png"/></div>
 
 
-- `Option #` - A customizable name appearing in the editor while using the Stop/Adapter tool tab.
+- `Option #` - A descriptive name for the option.
 
 - `Type:` - Determines which component list to use.
-    - `Glass Stops` - Can be applied to any opening.
+    - `Glass Stops` - Can be applied to any opening (panel).
     - `Operable Window Adapters` - Can only be applied to operable windows.
 
-- `Assign For` - Options to cover complex part assignment needs.
+- `Assign For` - Options to cover complex part assignments, including:
     - `All Sides` - The same assembly used for all sides.
-    - `Horizontals and Verticals` - The Left and Right share an assembly assignment and the top and bottom share one.
-    - `Each Side` - Each side gets assigned an assembly independently.
+    - `Horizontals and Verticals` - The Left and Right share an assembly and the top and bottom share another.
+    - `Each Side` - Each side gets assigned a different assembly.
 
-- `Auto Applications` - If checked the option will be applied to all opening using this system.
+- `Auto Applications` - If checked the option will be applied to all openings using this system.
     - Apply as default to all Lites ( not operable windows ). 
-    - Apply as default to all Operable Window Openings ( not operable windows ). 
+    - Apply as default to all Operable Window openings. 
 
-- `Horizontals/Verticals Continuous` - Choose which sides should run the full length of the opening and which ones will be cut.
+- `Horizontals/Verticals Continuous` - Choose which sides should run the full length of the opening and which ones will be interrupted.
 
-- `+ Add New Option` - Click to add additional option variations that you might apply specifically.
+- `+ Add New Option` - Click to add alternate options.
 
 ### Configuring Opening Options
 
@@ -50,14 +52,8 @@ The assembly dropdown is where you select the assembly to apply for this option.
 
 - Configured Assemblies - Lists all the configured assemblies available for this option.
 
-- `*Add New...`* - Opens up a view to add a new assembly for the selected type.
+- `*Add New...` - Opens a window to configure a new assembly of the selected type.
 <div class="app-img"><img src="/screenshots/configuration/frame-opening-assemblies.png"/></div>
-
-### Applying a New Assembly 
-Once you have options configured, you can apply them directly to your elevations using tool tabs.
-
-* See the [Stop/Adapter tool tab](../../drawing-elevations/stopadapter) for more details.
-
 
 
 

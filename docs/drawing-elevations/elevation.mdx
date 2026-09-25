@@ -7,8 +7,6 @@ Set the basic panel layout, sizing and framing system details.
 
 <div class="app-img"><img src="/screenshots/tool-tabs/editor-layout-1.png"/></div><br/>
 
-The Elevation Tool Tab is used to set the basic options for an elevation, including its height, width and quantity.
-
 :::info
         You'll need `Original Width`, `Original Height`, and `Panels` filled out before a preview of the elevation can be drawn. 
 :::
@@ -17,17 +15,25 @@ The Elevation Tool Tab is used to set the basic options for an elevation, includ
 
 * `Quantity` - Number of times this system appears in a job.
 
-* `Panels` - Number of glass panels between the left and right jamb.
-* `Edit Framing System` - Allows you to modify the applied framing system on the current elevation only.
-        * Any changes made here will create a copy of the framing system which can then be synced to the catalog. 
-        
-                * See [Local & Global Edits](../features-and-tips/config-levels) for more details.
+* `Panels` - Number of framed subdivisions / glass widths between the left and right jamb.
+
+        * By default, panels are full height and equally spaced. 
+                
+                * To set fixed dimensions, including adding a bulkhead / knee wall, use the [Adjust Panels](./adjust) tool tab.
+                
+                * To add horizontal framing, use the [Horizontals](./horizontals) tool tab.
+
+* `Edit Framing System` - Allows you to modify the framing system applied to this elevation.
+        * Any changes made here will create a copy of the framing system which can then be synced to the catalog. See [Local & Global Edits](../getting-started/concepts/config-levels) for more details.
 * `Original Width` - The rough opening width.
 * `Original Height` - The rough opening height.
-* `Caulk Joints` - Modify the Framing System’s default caulk joint sizes at each edge **for this elevation only.**
+* `Caulk Joints` - Override the framing system's default caulk joint thicknesses **for this elevation only.**
         * `L` - Caulk joint at the left jamb.
         * `R` - Caulk joint at the right jamb.
         * `T` - Caulk joint at the top / head.
         * `B` - Caulk join at the bottom / sill. 
-* ☑ `Force equal width panels` - Toggle forced equal spacing of verticals.
+* ☑ `Force equal width panels` - Forced equal spacing of vertical frames.
 
+:::tip
+    If you're updating the number of panels later in the process, try the `Insert Panels` / `Remove Panels` option in the `Adjust Panels` tab for more control over the changes.
+:::

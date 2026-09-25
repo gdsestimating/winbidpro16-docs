@@ -5,12 +5,12 @@ sidebar_position: 8
 
 ## Tips
 
-These configurations are officially supported in WinBidPro v16 but have some added set up when first configuring them.
+These configurations are officially supported in WinBidPro v16 but have some added set up when first configuring them. Follow these settings to get the most accurate counts.
 
 ### Can / Stick Systems
 
 :::info
-    For these, we want to have vertical assemblies slot into the head and sill so that they're cut correctly. This is especially important for raked elevations.
+    For these, we want to have vertical assemblies enough extra length to slot into the head and sill. This is especially important for raked elevations.
 :::
 
 * `Head Assembly` / `Sill Assembly`
@@ -19,19 +19,19 @@ These configurations are officially supported in WinBidPro v16 but have some add
 
 * `Head Receptor` / `Sill Receptor`
     
-    * Set the `Vertical Trim` to match the dimension from the base of the receptor profile to the vertical framing. 
+    * Set the `Vertical Trim` to the dimension from the base of the receptor profile to the end of the vertical. 
     
-    * See here for example:
+    * In this example, the vertical is drawn in yellow. The 13/32" dimension is what we want for the `Vertical Trim`.
 
 <div class="app-img"><img src="/screenshots/configuration/vertical-trim.png"/></div>
 
 ### SSG Systems
 
 :::info
-    These are some additional settings made to specifically handle SSG conditions.
+    These are some additional settings made to handle SSG conditions.
 :::
 
-* In the `Settings` tab, set your `SSG Type`.
+* In the `Settings` tab, set your `SSG Type`. Options include:
     
     * `None` 
     * `Vertical SSG`
@@ -42,11 +42,13 @@ These configurations are officially supported in WinBidPro v16 but have some add
 
     * Set the `Silicone Width` for each assembly.
 
+* See also - [Tips - Face Covers / Pressure Plates](./covers-plates).
+
 
 
 ## Tricks
 
-These configurations are not supported with dedicated settings, but you can approximate them by following the steps below.
+These configurations are not supported with dedicated settings, but you can approximate them with these settings.
 
 ### Butt Glazed Systems
 
@@ -64,7 +66,7 @@ These configurations are not supported with dedicated settings, but you can appr
 
     * `Head Receptor` / `Sill Receptor`
 
-        * Add your extrusion parts here.
+        * Add your head and sill extrusions here to make them continuous.
         * Match the `Vertical Trim` to the `Profile` dimension.
 
     * `Head Assembly` / `Sill Assembly`
@@ -77,7 +79,7 @@ These configurations are not supported with dedicated settings, but you can appr
         * Set `Profile` to the recommended size of the gap between glass lites.
         * Set `Glass Bite` to 0"
         * `Parts`
-            * For silicone, add or create a new part via the `+Browse List` button
+            * For silicone spacers, add or create a new part via the `+Browse List` button
                 * See [Configuring Parts](../config-parts.mdx) for more details.
             * For an air gap, you can leave the parts list empty.
 
@@ -90,9 +92,9 @@ These configurations are not supported with dedicated settings, but you can appr
 :::warning
     <img align="right" src="/screenshots/configuration/break-metal-warning.png"/>
 
-    This trick should only be used for visual reference, not for cost estimation. Verticals cannot interrupt head / sill receptors so the counts for receptors and the break metal will not be entirely accurate. See image on the right for reference.
+    This trick should only be used for visual reference, not for cost estimation. Verticals cannot interrupt head / sill receptors so the counts for receptors and brake metal will not be entirely accurate. See image on the right for reference.
     
-    For accurate cost estimates, each side of the structural gap should be separate elevations.
+    For accurate frame estimates, a structural gap should be excluded and the framed openings on either side should be separate elevations.
 
     <br clear="right"/>
 :::
@@ -111,6 +113,6 @@ These configurations are not supported with dedicated settings, but you can appr
 
 * In your Elevations:
 
-    * Add two panels in the `Elevation` tab.
-    * For the panels on either side of the gap, add a rule setting the panel width to 0" in the `Adjust Panels` tab.
+    * Add two panels in the `Elevation` tool tab.
+    * For the panels on either side of the gap, add set the panels to a fixed width of 0" in the `Adjust Panels` tab.
     * Set the middle vertical to the new assembly using the `Alternate` tab.

@@ -4,22 +4,23 @@ sidebar_position: 10
 ---
 
 :::info
-    Cassette Systems need extra set up to account for extrusions in the cassettes and alternate assemblies at expansion horizontals.
+    Cassette Systems need some extra set up to account for the separate extrusions at the cassettes, and for the alternate parts at expansion horizontals.
     
-    To set this up correctly, we'll make some alt assemblies in `Components` and set some rules in the `Joints` and `Opening Options`.
+    To set this up correctly, we'll make some alt assemblies in `Components` and build out some options in the `Joints` and `Opening Options`.
 :::
 
 :::warning
-    As you're building out your assemblies, do not include the framing at the cassettes. We'll be using `Opening Options` and `Stops` assemblies for those so we can set them per glass panel.
+    As you're building out your components, do not include the framing at the cassettes in your framing. We'll be using `Opening Options` and `Stops` assemblies for those so we can set them per glass panel.
 :::
 
 ---
 
 ## Additional Configuration Steps
 
-Follow the typical configuration steps for a framing system up to this point, then add the following assemblies and options.
+Follow the typical configuration steps for a framing system up to this point, ignoring the glass cassettes when as you do. Then add the following assemblies and options.
 
 * We'll be using the `Joints` tab for these systems, so pay special attention to where you assign hardware in your `Components` tab. 
+
     * See the [Joints Tab](../framing-systems/joints.mdx) page for more details.
 
 ### Horizontal Assembly
@@ -30,14 +31,19 @@ Add an alternate `Horizontal Assembly` in the `Components` tab:
 ### Stops Assemblies
 Create three `Stops` assemblies in the `Components` tab or the `Opening Options` tab:
 
-> **Standard Frame** - These are your default cassette framing assemblies along one edge of the cassette.  We'll be using this for all standard edge conditions.
+> **Standard Frame** - These are your default cassette assemblies along one edge of the cassette.  We'll be using this for all standard edge conditions.
 
 > **Expansion Sill** - Include the parts needed at the bottom frame of a cassette when an expansion horizontal is below.
 
 > **Expansion Head** - Include the parts needed at the top frame of a cassette when an expansion horizontal is above.
 
 ### Add New Opening Options
+
 Use the `+Add New Options` button in the `Opening Options` tab to create the following three options. See [Opening Options Tab](../framing-systems/opening.md) for more details.
+
+<div class="app-img"><img src="/screenshots/configuration/cassette-options.png"/></div>
+
+
 
 >        **Standard Cassette**
 >            * `Type`: `Glass Stops`
@@ -72,7 +78,9 @@ Use the `+Add New Options` button in the `Opening Options` tab to create the fol
 
 In the `Joints` tab, configure all joint conditions based on vendor requirements at different conditions. See [Joints Tab](../framing-systems/joints.mdx) for more details.
 
-You'll most likely need a joint configuration for each of the following:
+<div class="app-img"><img src="/screenshots/configuration/cassette-joints.png"/></div>
+
+In most cases you'll need a joint configuration for each of the following:
 
 > * When `Head Receptors` meets `All Jambs`
 > * When `Sill Receptors` meets `All Jambs`
@@ -83,9 +91,13 @@ You'll most likely need a joint configuration for each of the following:
 
 ## Drawing Elevations
 
+
+
 With these options configured, draw your elevations. 
 
 By default, your elevation have all panels set to the Standard Frame stops and the default horizontal option at all horizontal. From here, we'll apply the expansion horizontal and the alternate stops/adapters using tool tabs. 
+
+
 
 * For elevations where a vertical splice is needed: 
     * Using the `Alternate` tool tab, apply the expansion horizontal assembly at the horizontal aligned with the vertical splice.
@@ -94,3 +106,7 @@ By default, your elevation have all panels set to the Standard Frame stops and t
         * Apply expansion head to the panels below the expansion horizontal.
 
 As long as they're configured correctly, the joints should apply themselves. You can review them using the `Joints` tool tab.
+
+See here for an example where a vertical splice has been added between the 2nd and 3rd row of panels:
+
+<div class="app-img"><img src="/screenshots/configuration/cassette1.png"/></div>

@@ -1,5 +1,5 @@
 ---
-title: Toolbar Menus
+title: Main Menu
 sidebar_position: 3
 ---
 
@@ -17,10 +17,11 @@ Manage and review your current job, or start / open another one.
 * `Import Elevations` - Import elevations from other exports and third-party resources.
 
 ### Edit Job
+For more details on how these lists differ from your catalog entries, see [Local and Global Edits](../concepts/config-levels.mdx).
 
 * `Job Details` - Edit job details like Status, Bid Date, Contacts, and job-specific settings.
-* `Parts` - Manage the list of parts used in the current job.
-* `Glass` - Manage the list of glass products used in the current job.
+* `Parts` - Manage the list of parts loaded into the current job.
+* `Glass` - Manage the list of glass products loaded into the current job.
 * `Labor Rules & Settings` - Manage [Labor Rules and Settings](../../features-and-tips/labor-rules) for the current job.
 * `Finishes` - Manage the list of finishes available for the current job.
 
@@ -49,10 +50,10 @@ These are split into the following sections:
 
 Manage and export drawings on the current job and your team's Cover Page.
 
-* `Shop Drawings` - Configure [Shop Drawings](../../output/shop-drawings) for the current job.
-* `Cover Page` - Manage your team's [Cover Page](../../output/cover-page.md) for printed drawing sets.
-* `Irregular Glass` - Configure drawings for irregular shaped glass in the current job.
-* `Export Drawings to DWG/DXF` - Generate CAD files of drawings in the current job.
+* `Shop Drawings` - Configure and generate [Shop Drawings](../../output/shop-drawings) for the current job.
+* `Cover Page` - Configure a [Cover Page](../../output/cover-page.md) for shop drawing sets.
+* `Irregular Glass` - Generate drawings for irregular shaped glass in the current job.
+* `Export Drawings to DWG/DXF` - Generate and export CAD files of drawings in the current job.
 * `Refresh Active Drawing` - Force a refresh of all generated drawings.
 
 
@@ -68,21 +69,21 @@ Set up and manage your team's catalogs.
 ### Active Catalog
 
 Manage the `Parts`, `Systems`, `CAD Details`, etc. for the catalog selected for your current job.
-    * See the [Catalogs](../../features-and-tips/catalogs) section for more details.
+    * See the [Catalogs](../concepts/catalogs) section for more details.
 
 ### Products & Templates
+Products and Templates are independent of vendor catalogs and useable across all jobs.
 
 * `Glass Table` - Manage [Glass Products](../../custom-parts/config-glass) available to your team.
-* `Part Types` - Manage part types available to your team.
+* `Part Types` - Manage part types available to your team. These are general categories for parts that WinBidPro looks for to pre-filter lists.
 * `Operable Window Templates` - Manage [Operable Window Templates](../../custom-parts/config-window) available to your team.
-* `Contact List` - Manage your team's contact list.
+* `Contact List` - Manage your team's contact list. Used for clients, contractors, owners, etc in job details and printed reports.
 
 <br clear="right"/>
 
 ## Settings Menu <img align="right" src="/screenshots/interface/toolbar-settings.png"/>
 
-
-Set up and manage your settings and your team's settings for all jobs.
+Set up and manage your settings for all jobs.
 
 * `Labor Settings` - Set global and default settings for labor pricing.
 * `Editor Settings` - Change your default app settings and appearance.
@@ -96,17 +97,16 @@ Set up and manage your settings and your team's settings for all jobs.
 
 ## View Menu <img align="right" src="/screenshots/interface/toolbar-view.png"/>
 
-Toggle your visible windows and reset your layout to default.
+Toggle sidebars and reset your layout to default.
 
-* `Open Welcome Tab` - Opens the Welcome tab window in your workspace.
-* ☑ `Show Welcome Tab on Startup` - Toggles showing the welcome tab every time you load the app.
+* `Open Patch Notes` - See the latest sets of changes to the app.
 
 ### Main Window Layout
 
 * ☑ `Show Tool Tabs` - Toggle the tools tabs interface at the bottom of your screen.
-* ☑ `Show Layer Settings` - Toggle the layer settings window.
-* ☑ `Show Elevation Totals` - Toggle the Elevation Totals window.
-* ☑ `Show Reports Explorer` - Toggle the Reports Explorer window
+* ☑ `Show Layer Settings` - Toggle the layer settings sidebar.
+* ☑ `Show Elevation Totals` - Toggle the Elevation Totals sidebar.
+* ☑ `Show Reports Explorer` - Toggle the Reports Explorer sidebar.
 
 ### Layout Resets
 
@@ -127,7 +127,6 @@ Find documentation, submit issues and requests, and get help from GDS.
 * `Catalog Add / Edit Request` - Submit a request to edit or add systems and parts to our preconfigured vendor catalogs. 
 * `Open Training Videos` - Click to open our training videos.
 * `Open Documentation` - Click to open our documentation.
-* `Open Contextual Help` - Open a contextual help window that will give you more information on the tools you're currently using.
 * `GDS Screen Connect` - A support feature to help us connect to your WinBidPro session when you're having issues.
 * `About` - Details on which WinBidPro version you're using and links our Privacy Policy and Terms of Service. 
 
