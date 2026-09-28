@@ -10,7 +10,7 @@ There are 3 common setups for WinBidPro:
 
 1. [Single User Setup: Run it from your own computer with your own data files.](#single-user-setup)
 2. [Multi-User Setup with Shared Data: Run it from your own computers, but share data with colleagues over a network.](#multi-user-setup-with-shared-data)
-3. [Multi-User Remote Desktop Setup: Run it on a remote desktop server that users log into (Often managed by a third-party IT company)](./installing-on-a-server)
+3. [Multi-User Remote Desktop Setup: Run it on a remote desktop server that users log into (Often managed by a third-party IT company)](./setup/installing-on-a-server)
 
 ### Single User Setup
 
@@ -18,8 +18,8 @@ This is the simplest. Just [download the WinBidPro Installer from our downloads 
 
 ### Multi-User Setup with Shared Data
 
-In this setup, users install the program on each of their own machines, but access their WinBidPro data from a shared network location. Install WinBidPro just the like in the Single User Setup described above, but then move your data to shared drive. Read [Sharing Catalogs](./sharing-catalogs) to learn more about how to do this.
+In this setup, users install the program on each of their own machines, but access their WinBidPro data from a shared network location. Install WinBidPro just the like in the Single User Setup described above, but then move your data to shared drive. Read [Sharing Catalogs](./setup/sharing-catalogs) to learn more about how to do this.
 
 ### Multi-User Remote Desktop Setup
 
-In this setup, users all log into a remote or locally networked server such as Windows Server or Citrix. This is an advanced setup that usually requires an IT professional. Read [Installing on a Server](./installing-on-a-server) to learn how to best deploy WinBidPro in a Remote Desktop setup with many users.
+In this setup, users all log into a remote or locally networked server such as Windows Server or Citrix. This is an advanced setup that usually requires an IT professional. Read [Installing on a Server](./setup/installing-on-a-server) to learn how to best deploy WinBidPro in a Remote Desktop setup with many users.
