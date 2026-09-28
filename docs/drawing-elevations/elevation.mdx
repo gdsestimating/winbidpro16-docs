@@ -13,26 +13,28 @@ Set the basic panel layout, sizing and framing system details.
 
 ## Options
 
-* `Quantity` - Number of times this system appears in a job.
+* `Quantity` - Number of instances of this frame in the job. Cuts, glass, labor etc. for this frame will be multiplied by this number.
 
-* `Panels` - Number of framed subdivisions / glass widths between the left and right jamb.
+* `Panels` - Number of glass panels between the left and right jamb. AKA "Bays" or "Columns".
+        * To set fixed dimensions, including adding a bulkhead / knee wall, use the [Adjust Panels](./adjust) tool tab.
+        * To add horizontal framing, use the [Horizontals](./horizontals) tool tab.
 
-        * By default, panels are full height and equally spaced. 
-                
-                * To set fixed dimensions, including adding a bulkhead / knee wall, use the [Adjust Panels](./adjust) tool tab.
-                
-                * To add horizontal framing, use the [Horizontals](./horizontals) tool tab.
+* `Edit Framing System` - Allows you to modify the applied framing system.
+        * Changes affect the system in the job, not the catalog; however, it can be sync'd to the catalog. See [Local & Global Edits](../features-and-tips/config-levels) for more details.
 
-* `Edit Framing System` - Allows you to modify the framing system applied to this elevation.
-        * Any changes made here will create a copy of the framing system which can then be synced to the catalog. See [Local & Global Edits](../getting-started/concepts/config-levels) for more details.
-* `Original Width` - The rough opening width.
-* `Original Height` - The rough opening height.
-* `Caulk Joints` - Override the framing system's default caulk joint thicknesses **for this elevation only.**
+* `Original Width` - The rough opening width. May be net frame width if you do not enter caulk joints.
+
+* `Original Height` - The rough opening height. May be net frame height if you do not enter caulk joints.
+
+> NOTE: Some tool tab commands applied to the frame, or settings, may alter the width or height, which is why it is `Original Width` and `Original Height` opposed to `Width` and `Height`. If the _actual_ width or height is different from the original, it will be indicated here next to the input boxes.
+
+* `Caulk Joints` - Modify the frame's caulk joint sizes **for this frame only.**
         * `L` - Caulk joint at the left jamb.
         * `R` - Caulk joint at the right jamb.
         * `T` - Caulk joint at the top / head.
         * `B` - Caulk join at the bottom / sill. 
-* ☑ `Force equal width panels` - Forced equal spacing of vertical frames.
+
+* ☑ `Force equal width panels` - Force all equal panels widths to be **exactly** equal. This may shrink the width of the elevation due to fractional rounding.
 
 :::tip
     If you're updating the number of panels later in the process, try the `Insert Panels` / `Remove Panels` option in the `Adjust Panels` tab for more control over the changes.
