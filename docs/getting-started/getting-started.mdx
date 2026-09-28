@@ -3,68 +3,92 @@ title: Getting Started
 sidebar_position: 1
 ---
 
-:::info 
-    This section is an introduction to WinBidPro v16. It covers first steps, basic workflow for all jobs, and the interface.
-:::
+## Getting Familiar with WinBidPro
 
----
+If you're brand new to the app, we recommend reading through the [Basic Workflow](./basic-workflow) page for a quick breakdown of a typical job. 
+
+If you want to know more, the [Core Concepts](./concepts) section goes through the big picture and important concepts behind WinBidPro. 
+
+### Documentation Sections
+
+The documentation is broken up into the following sections. Use the sidebar to the left (or the menu button on mobile and small screens) to find specific sections and pages.
+
+* Getting Started - (This Section) - The basics of the program, including big concepts, UI guides, and some extra information for those upgrading from v15.
+
+* [Features and Tips](../features-and-tips) - Pages devoted to big features, as well as tips for specific tasks, like Sharing Jobs.
+* [Drawing Elevations](../drawing-elevations) - A breakdown of the tools used to refine your elevations.
+* [Finalizing Your Estimate](../finalize) - A breakdown of your job summaries and settings.
+* [Exports & Print Outs](../output) - Details on export options including reports, spreadsheets, labels, quotes, and shop drawings.
+* [Custom Parts & Systems](../custom-parts) - Advanced topics on configuring your own parts and systems or editing the preconfigured ones.
+* [Integrations & IT](../integrations) - Advanced topics for large or tech-focused organizations.
 
 ## Installing WinBidPro v16
-After downloading v16, you want to open the installation file and the program will install on your computer. A "W" WinBidPro v16 icon will be added to your desktop and the program will open automatically when the installer is finished.
+After downloading v16, open the installation file and go through the installation menus. Once installed, a "W" WinBidPro v16 icon will be added to your desktop and start menu. The program will open automatically when the installer is finished.
 
-WinBidPro v16 is a hybrid Cloud based system, so the program is installed on your computer, but all of the data used for quotes and drawings is stored in the Cloud on Amazon AWS servers. This means you can install the software on any computer running Microsoft Windows 8 or newer, login with your email address and password, and you will have full access to your company's data.
+WinBidPro v16 is a hybrid Cloud based system, so the program is installed on your computer, but all of the data used for quotes and drawings is stored in the Cloud on Amazon AWS servers. This means you can install the software on any computer running Microsoft Windows 8 or newer, login with your email address and password, and still have full access to your company's data.
 
-Apple Mac users can run WinBidPro if they have Parallels (software that lets you run MS Windows on a Mac) and a copy of MS Windows installed.
+Apple Mac users can run WinBidPro through virtual machines or booting into a Windows partition. If you're interested in this, customer feedback suggests Parallels and VMWare are solid options.
 
 ### Choose Your Vendor Catalogs
-The first time you open v16 you will be prompted to select the vendor catalog(s) you want to created estimates with. If you ever need to add more catalogs, or even remove one from your list, you can:
-1. Click on the `Catalogs` menu
-2. Then click `Manage Vendors`
+The first time you open v16 you'll be prompted to select the vendor catalog(s) you want quick access to. If you ever need to add or remove catalogs from your list, you can click `Catalogs` > `Manage Vendors` at the top of the WinBidPro window.
 
-Whenever you create a new job you will select a catalog. There is only one list of jobs to look at. This will show you all of the jobs from any vendor created by any user in your company account.
+Whenever you create a new job you'll select one of these catalogs. To avoid mismatched parts or overlapping parts numbers, each Job in WinBidPro can only have one catalog associated with it.
 
-### Welcome Tab 
-The Welcome tab is a great place to see tips and new features about the program. You can also see a list of recent jobs, and create a new job, and open your list of jobs -- all from this one place.
+### Home Tab 
+Without a job loaded, you'll see this page in the main workspace area. From here you can create or open a job, or review the most recent changes by clicking `Patch Notes`. You'll also get a list of jobs you've recently worked for quick access.
 
-<div class="app-img"><img src="/screenshots/interface/welcome.png"/></div>
+<div class="mini-img"><img src="/screenshots/home.png"/></div>
 
 ## Catalogs
 
 ### Know Your Catalogs
-We always recommend that you familiarize yourself with the vendor catalog you will use to create jobs. Most catalogs available in v16 have list pricing already configured. A discount multiplier of 1 is set to all parts by default, so it is up to you to enter your company's multipliers for a certain vendor. There is a tool in the Final Parts View and the Edit Job Parts window to change multipliers for a job. The Vendor Parts window (under the Catalog - Parts menu) has the same tool to change multiples at the master catalog level.
+We always recommend that you familiarize yourself with the vendor catalog to start. 
 
-Aside from know the pricing in a catalog, it is important to know a frame configuration when you intend to use it in a job. Each frame in the Framing Systems list is configured with all things that make for a accurate drawing and an complete list of parts. Before creating a job, it is always a good idea to edit the Framing System(s) you plan to use, and review how it is configured, and what parts are being used.
+Most catalogs available in v16 have list pricing already configured. A discount multiplier of 1 is set to all parts by default, so it is up to you to enter your company's multipliers for a certain vendor. You can change multipliers in a couple ways:
 
-Version 16 makes this easier, because each frame component has all of it's required parts listed in as an Assembly. These Assemblies are all visible in the Components tab when editing a Framing System.
+    * To change them for a specific job use the `Change Multipliers...` option in the `Reports` > `Final Parts` or `Job` > `Edit Job Parts` windows from the main menu at the top of the app.
+    
+    * The same option shows up in the `Catalog` > `Vendor Parts` window. This version changes the multipliers at the catalog level, which will change it for your entire team and every job moving forward. 
+    
+        * For more details on job edits and team edits see [Core Concepts Part 3 - Local and Global Edits](./concepts/config-levels).
+
+Aside from pricing, it's important to get familiar with a framing system's parts before using it on a job. 
+
+Each preconfigured framing system is built for accurate drawings and parts lists. Before creating a job, it is always a good idea review how a framing system is configured and what parts are being used. You can do that by clicking the edit option from the framing system catalog.
+
+For more detailed information on configuring systems, see the [Custom Parts & Systems](../custom-parts/custom-parts) section.
 
 <div class="app-img"><img src="/screenshots/components-tab.png"/></div>
 
-If you plan on using a different header part, for example, you can delete and add a different part number right from this screen. You can also edit an Assembly to add an remove parts. If you are editing a default frame in a catalog you will be prompted to make a copy of that frame, so the default will remain unchanged (this feature is coming soon, right now you will need to copy the frame first then edit).
 
 ## Creating a New Job
-To create a new job you can:
-1. Click on the `Jobs` > `New Job` menu, or from the Jobs List window, click the + sign at the top left
-2. Select the Vendor to use fom the list
-3. Enter a name for the job
-4. Select a Finish color for the job
-5. Click the `Create` button
+
+<div class="mini-img"><img src="/screenshots/new-job-window.png"/></div>
+
+1. Click on the `Jobs` > `New Job` from the main menu.
+2. Select the Vendor to use fom the list.
+3. Enter a name for the job.
+4. Select a Finish color for the job.
+5. Click the `Create` button.
 
 ### First Elevation
 
-<div class="app-img"><img src="/screenshots/new-job-window.png"/></div>
+<div class="mini-img"><img src="/screenshots/sample-new-elevation.png"/></div>
 
-Next, you will start creating elevations. A New Elevation window will appear. Here you can either enter a Standard Elevation (default) or a Punched Entrance. Here is what you will do for a Standard Elevation:
-1. Enter a name for your elevation
-2. Edit the Code if you would like to match an elevation code from the plans your are taking off
-3. Select a Framing System for this elevation by clicking the `Browse` button
-4. Click `Save` to continue to the drawing window
+Once you create a job, you'll see the New Elevation window pop-up. 
 
-<div class="app-img"><img src="/screenshots/new-elevation-window.png"/></div>
+Here you can either enter a Standard Elevation (default), Punched Entrance or Punched Entrance w/ Transom. Standard Elevations cover most use cases. For those, you'll want to:
 
-Now you will need to define the basic layout of your elevation. Enter the quantity for this particular elevation, then the number of panels, then the overall width and height. Keep in mind if you are adding an entrance, and it has divided glass in the transom, you will need to count each division as a panel. For example, a transom entrance with glass divided down the middle requires 2 panels. When adding an entrance in this case, you would click on the two panels where the entrance will go, then select the entrance package to apply.
+1. Enter a mark - you'll usually want to match this to the tags in your drawing set.
+2. Add a description (optional).
+3. Select a Framing System for this elevation by clicking the `Browse` button.
+4. Select a finish option - this defaults to your finish choice at job creation.
+5. Select a labor ruleset - see [Labor](../features-and-tips/labor) for details.
+4. Click `Save` to continue to the drawing window.
+
+Once you create the elevation, it'll need some basic details before it show up in the elevation view. Below the viewer, you'll see your tool tabs. Input a height, width, # of panels and quantity. Once those are set, you'll have access to the other tool tabs which you'll use to refine the elevation.
+
+See the [Basic Workflow](./basic-workflow) page for a breakdown of a typical job from here, or refer to specific sections of the docs for details on each of the steps.
 
 <div class="app-img"><img src="/screenshots/layout-tab-new.png"/></div>
 
-You now have the basic layout of your elevation. From this point, you can add horizontals, entrances, change panel widths and heights, among other things. Look for more documentation and training videos on these different drawing tools in the program.
-
-For a more in depth breakdown of how to build elevations and all the available drawing tools check out the [Drawing Elevations](../drawing-elevations/drawing-elevations) section.
