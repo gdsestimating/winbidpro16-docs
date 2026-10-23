@@ -28,6 +28,18 @@ Your tab will switch to a new view where you can add entrances by selecting pane
 * `Add Door Leaf` - `Browse` your current vendor catalog for a pre-configured door leaf, or `Edit` a previous choice.  
 * `Select Existing` - `Browse` your current vendor catalog for a pre-configured frame & leaf assembly, or select one currently in use `From Job`.
 
+:::tip
+    Follow these steps if you need transom glass to span over the door panel and an adjacent sidelite.
+
+    1. Add the entrance with transom.
+    2. [Add a horizontal](../drawing-elevations/horizontals.mdx) at the transom height to both the door panel and the sidelite panel.
+    3. [Add a merge condition](../drawing-elevations/merges.mdx) with both pieces glass.
+
+    This will replace the horizontal part on the sidelite with extended transom parts. 
+    
+    Once it's set up, double check that you have a `Cripple Header Stop` set up for the sidelight glass beneath the extended transom. See [Configuring Entrances](../custom-parts/config-entrance.mdx).
+:::
+
 ### Confirm / Return
 
 Click `Save` to confirm your settings, apply the entrance to the elevation, and return to the list view.
