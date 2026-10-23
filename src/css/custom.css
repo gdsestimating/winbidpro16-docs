@@ -89,3 +89,12 @@ img[alt=jobalertmenu] {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Keep enlarged screenshots above the sticky navigation. */
+.medium-zoom-overlay {
+  z-index: 1001;
+}
+
+.medium-zoom-image--opened {
+  z-index: 1002;
+}

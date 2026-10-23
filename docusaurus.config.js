@@ -60,6 +60,7 @@ const config = {
     ],
   ],
     plugins: [
+      'docusaurus-plugin-image-zoom',
       [
         '@docusaurus/plugin-content-docs',
         {
@@ -77,6 +78,16 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      zoom: {
+        selector: 'img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(25, 25, 25)',
+        },
+        config: {
+          margin: 24,
+        },
+      },
       colorMode: {
         respectPrefersColorScheme: true,
       },
