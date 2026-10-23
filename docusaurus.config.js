@@ -43,16 +43,7 @@ const config = {
             },
           },
         },
-        blog: {
-          showReadingTime: false,
-          feedOptions: {
-            type: ['rss', 'atom'],
-            xslt: true,
-          },
-          onInlineTags: 'warn',
-          onInlineAuthors: 'warn',
-          onUntruncatedBlogPosts: 'ignore',
-        },
+        blog: false,
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -118,10 +109,6 @@ const config = {
             label: 'Glossary',
             position: 'left',
           },
-          // { link: '/blog',
-          //   label: 'Patch Notes', 
-          //   position: 'left' 
-          // },
         ],
       },
       footer: {
