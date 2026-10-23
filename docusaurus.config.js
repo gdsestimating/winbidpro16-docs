@@ -38,8 +38,11 @@ const config = {
           lastVersion: 'current',
           versions: {
             current: {
-              label: '16',
+              label: 'V16 Docs',
               path: '16',
+            },
+            '15': {
+              label: 'V15 Docs',
             },
           },
         },
@@ -63,6 +66,23 @@ const config = {
         },
       ]
     ],
+
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: 'filename',
+        language: ['en'],
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        docsRouteBasePath: ['docs', 'glossary'],
+        docsDir: ['docs', 'versioned_docs', 'glossary'],
+        explicitSearchResultPath: false,
+        highlightSearchTermsOnTargetPage: false,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -97,10 +117,7 @@ const config = {
           {
             type: 'docsVersionDropdown',
             position: 'left',
-            versions: {
-              current: {label: 'V16 Docs'}, 
-              '15': {label: 'V15 Docs'},
-            },
+            versions: ['current', '15'],
           },
           {
             type:'docSidebar',
@@ -108,6 +125,10 @@ const config = {
             docsPluginId: 'glossary',
             label: 'Glossary',
             position: 'left',
+          },
+          {
+            type: 'search',
+            position: 'right',
           },
         ],
       },

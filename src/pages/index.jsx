@@ -31,7 +31,7 @@ export default function Home() {
     <Layout
       description="WinBidPro 16 docs home">
       <HomepageHeader />
-      <main>
+      <main className={styles.main}>
         <HomepageFeatures />
       </main>
     </Layout>

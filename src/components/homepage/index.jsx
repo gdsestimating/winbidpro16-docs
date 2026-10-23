@@ -5,7 +5,6 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/w.svg').default,
     description: (
       <>
         We make it simple to start bidding jobs right away. Use pre-configured
@@ -15,7 +14,6 @@ const FeatureList = [
   },
   {
     title: 'Focus on What Matters',
-    Svg: require('@site/static/img/w.svg').default,
     description: (
       <>
         WinBidPro will let you focus on the features you care about. Nearly
@@ -27,7 +25,6 @@ const FeatureList = [
   },
   {
     title: 'Stored in the Cloud',
-    Svg: require('@site/static/img/w.svg').default,
     description: (
       <>
         WinBidPro16 is cloud-based. Get your data anywhere where there is internet
@@ -38,12 +35,9 @@ const FeatureList = [
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({title, description}) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
-      </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
         <p>{description}</p>
